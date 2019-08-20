@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit id="SentryPhasing">
+        <AbilArray Link="PhaseCannonSentry"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="9" Face="KaraxEnergyRegenUpgrade" Type="Passive" Requirements="HaveKaraxEnergyRegenUpgrade" Row="1" Column="0"/>
+            <LayoutButtons Face="PhaseCannonSentry" Type="AbilCmd" AbilCmd="PhaseCannonSentry,Execute" Row="2" Column="4"/>
+        </CardLayouts>
+        <SubgroupPriority value="125"/>
+    </CUnit>
+    <CUnit id="SentryPurifier">
+        <AbilArray Link="PhaseCannonSentry"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="8" Face="KaraxEnergyRegenUpgrade" Type="Passive" Requirements="HaveKaraxEnergyRegenUpgrade" Row="1" Column="0"/>
+            <LayoutButtons Face="PhaseCannonSentry" Type="AbilCmd" AbilCmd="PhaseCannonSentry,Execute" Row="2" Column="4"/>
+        </CardLayouts>
+        <!--BehaviorArray Link="WarpInAttackSpeedBehavior"/-->
+    </CUnit>
+</Catalog>

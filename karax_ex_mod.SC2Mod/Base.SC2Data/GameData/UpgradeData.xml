@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="KaraxCommander">
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research1].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research2].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research3].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research4].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research5].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research6].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research7].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research8].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ForgeResearch,InfoArray[Research9].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,CyberneticsCoreResearch,InfoArray[Research1].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,CyberneticsCoreResearch,InfoArray[Research2].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,CyberneticsCoreResearch,InfoArray[Research3].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,CyberneticsCoreResearch,InfoArray[Research4].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,CyberneticsCoreResearch,InfoArray[Research5].Resource[Vespene]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,CyberneticsCoreResearch,InfoArray[Research6].Resource[Vespene]" Value="0"/>
+    </CUpgrade>
+    <CUpgrade id="KaraxInstantStructureWarp">
+        <EffectArray Reference="Abil,ProtossBuild,Range" Value="5"/>
+    </CUpgrade>
+</Catalog>

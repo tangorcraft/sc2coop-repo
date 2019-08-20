@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="EnslavedSoulsArmor">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendantspermanentlybetter.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+</Catalog>

@@ -1,0 +1,8 @@
+﻿Behavior/Name/AlarakEnslavedSoulsArmor=AlarakEnslavedSoulsArmor
+Button/Name/EnslavedSoulsArmor=Enslaved Souls Armor
+Button/Tooltip/EnslavedSoulsArmor=Absorbed enemy souls strengthen Alarak's shield armor with +<d ref="Behavior,AlarakEnslavedSoulsArmor,Modification.ShieldArmorBonus" precision="2"/>.<n/>Alarak have <d ref="Behavior,AlarakEnslavedSoulsArmor,DamageResponse.Chance*100.0" precision="2"/>% chance to reflect enemy attack back, dealing <d ref="Effect,AlarakSoulShieldReflectionDamage,Amount" precision="2"/> damage.
+DocInfo/DescShort=Any
+DocInfo/Name=Just Another StarCraft II Mod
+Effect/Name/AlarakSoulShieldReflectionDamage=AlarakSoulShieldReflectionDamage
+Effect/Name/AlarakSoulShieldReflectionSearch=AlarakSoulShieldReflectionSearch
+Effect/Name/AlarakSoulShieldReflectionSwitch=AlarakSoulShieldReflectionSwitch

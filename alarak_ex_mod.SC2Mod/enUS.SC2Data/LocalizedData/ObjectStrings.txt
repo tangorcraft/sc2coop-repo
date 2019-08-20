@@ -1,0 +1,2 @@
+﻿Actor/Name/AlarakSoulShieldReflection=AlarakSoulShieldReflection
+Button/EditorPrefix/EnslavedSoulsArmor=Alarak -

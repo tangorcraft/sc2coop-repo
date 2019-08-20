@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectCreateUnit id="PhaseCannonSentry">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Birth" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnEffect value="PhaseCannonInitialStunSentry"/>
+        <SpawnUnit value="PhotonCannon"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="PhaseCannonInitialStunSentry">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PhaseCannonTimedLifeSentry">
+        <EditorCategories value="Race:Protoss"/>
+    </CEffectApplyBehavior>
+</Catalog>

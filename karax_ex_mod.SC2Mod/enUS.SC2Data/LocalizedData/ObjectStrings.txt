@@ -1,0 +1,10 @@
+﻿Abil/EditorPrefix/PhaseCannonSentry=Energizer -
+Behavior/EditorPrefix/PhaseCannonInitialStunSentry=Energizer -
+Behavior/EditorPrefix/PhaseCannonTimedLifeSentry=Energizer -
+Behavior/Name/PhaseCannonInitialStunSentry=Phase Cannon Initial Stun
+Behavior/Name/PhaseCannonTimedLifeSentry=Phase Cannon Timed Life
+Button/EditorPrefix/PhaseCannonSentry=Energizer -
+Effect/EditorPrefix/PhaseCannonInitialStunSentry=Energizer -
+Effect/EditorPrefix/PhaseCannonSentry=Energizer -
+Effect/EditorPrefix/PhaseCannonTimedLifeSentry=Energizer -
+Validator/Name/CasterNotDeadOrUnderConstruction=Caster Not Dead Or Under Construction

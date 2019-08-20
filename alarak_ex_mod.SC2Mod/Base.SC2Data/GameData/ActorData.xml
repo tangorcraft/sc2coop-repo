@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorAction id="AlarakSoulShieldReflection" parent="GenericAttack" effectAttack="AlarakSoulShieldReflectionDamage">
+        <LaunchAssets Sound="Archon_AttackLaunch"/>
+        <Beam value="AlarakLightningStrikesAttackBeam"/>
+        <BeamScope value="Caster"/>
+        <ImpactSiteOps Ops="SOpAttachHarness SOpAttachVolumeNoVizEnhance VoidRaySOpForwardLaunch"/>
+        <ImpactMap index="None" Model="" Sound="Alarak_LightningStrike_AS"/>
+        <ActionFlags index="ImpactMonitorsTeleports" value="1"/>
+    </CActorAction>
+</Catalog>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Actor id="SYSTEM_ActorConfig"/>
+<Sound id="Alert_ProtossBuildError"/>
+<Unit id="Colossus"/>
+<Unit id="Nexus"/>
+<Unit id="Pylon"/>
+<Unit id="Assimilator"/>
+<Unit id="Gateway"/>
+<Unit id="Forge"/>
+<Unit id="FleetBeacon"/>
+<Unit id="TwilightCouncil"/>
+<Unit id="PhotonCannon"/>
+<Unit id="Stargate"/>
+<Unit id="RoboticsBay"/>
+<Unit id="RoboticsFacility"/>
+<Unit id="CyberneticsCore"/>
+<Unit id="Zealot"/>
+<Unit id="Carrier"/>
+<Unit id="WarpGate"/>
+<Unit id="ShieldBattery"/>
+<Unit id="SentryPhasing"/>
+<Unit id="SentryPurifier"/>
+<Unit id="KhaydarinMonolith"/>
+<Unit id="ZealotPurifier"/>
+<Unit id="PhoenixPurifier"/>
+<Unit id="CarrierAiur"/>
+<Unit id="ImmortalAiur"/>
+<Unit id="ColossusPurifier"/>
+<Unit id="ZealotPurifierReviveCorpse"/>
+<Unit id="SolarForge"/>
+</Preload>

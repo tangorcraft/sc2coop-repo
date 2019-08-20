@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorModel id="PhaseCannonWarpIn">
+        <On Terms="Behavior.PhaseCannonInitialStunSentry.On" Send="Create"/>
+    </CActorModel>
+    <CActorUnit id="PhotonCannon">
+        <On Terms="Behavior.PhaseCannonInitialStunSentry.On" Send="ModelSwap PhotonCannonBirth"/>
+        <On Terms="Behavior.PhaseCannonInitialStunSentry.On" Send="AnimPlay Birth Stand,Build,End"/>
+        <On Terms="Behavior.PhaseCannonInitialStunSentry.On" Send="AnimSetTime Birth 5.000000"/>
+        <On Terms="Behavior.PhaseCannonInitialStunSentry.On" Send="AnimSetTimeScale Birth 2.000000"/>
+    </CActorUnit>
+</Catalog>

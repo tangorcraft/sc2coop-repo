@@ -1,0 +1,1 @@
+﻿Validator/Name/DoesNotHaveSOAMapWideChronoPassiveTarget=Does Not Have Karax SOA Chrono Passive

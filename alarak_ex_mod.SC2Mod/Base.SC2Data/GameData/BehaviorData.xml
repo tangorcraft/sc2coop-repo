@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="AlarakEnslavedSoulsArmor">
+        <DamageResponse>
+            <Chance value="0.05"/>
+            <Handled value="AlarakSoulShieldReflectionSwitch"/>
+            <ModifyFraction value="0"/>
+            <ModifyMinimumDamage value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+</Catalog>

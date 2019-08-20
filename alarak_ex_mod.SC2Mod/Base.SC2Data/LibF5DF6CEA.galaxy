@@ -1,0 +1,153 @@
+include "TriggerLibs/NativeLib"
+include "LibCOOC"
+include "LibCOMI"
+
+include "LibF5DF6CEA_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: alarak_ex
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void libF5DF6CEA_InitLibraries () {
+    libNtve_InitVariables();
+    libCOOC_InitVariables();
+    libCOMI_InitVariables();
+}
+
+// Variable Initialization
+bool libF5DF6CEA_InitVariables_completed = false;
+
+void libF5DF6CEA_InitVariables () {
+    if (libF5DF6CEA_InitVariables_completed) {
+        return;
+    }
+
+    libF5DF6CEA_InitVariables_completed = true;
+
+}
+
+// Functions
+void libF5DF6CEA_gf_UpdateSoulShield (int lp_player) {
+    // Variable Declarations
+    fixed lv_armor;
+    fixed lv_chance;
+    fixed lv_dmg;
+    fixed lv_count;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_chance = 0.05;
+    lv_dmg = 5.0;
+    lv_count = libF5DF6CEA_gv_alarak_SoulCount[lp_player];
+
+    // Implementation
+    if ((lv_count < 300.0)) {
+        lv_armor += (lv_count * 0.01);
+        lv_chance += (lv_count * 0.001);
+        lv_dmg += (lv_count * 0.03);
+    }
+    else {
+        lv_armor += 3.0;
+        lv_chance += 0.3;
+        lv_dmg += 9.0;
+        lv_count -= 300.0;
+        if ((libF5DF6CEA_gv_alarak_SoulCount[lp_player] < 1000.0)) {
+            lv_armor += (lv_count * 0.01);
+            lv_chance += (lv_count * 0.0003);
+            lv_dmg += (lv_count * 0.016);
+        }
+        else {
+            lv_armor += 10.0;
+            lv_chance += 0.3;
+            lv_dmg += 16.0;
+            lv_count -= 1000.0;
+            lv_armor += (lv_count * 0.005);
+            lv_chance += (lv_count * 0.0002);
+            lv_dmg += (lv_count * 0.01);
+            if ((lv_chance > 0.75)) {
+                lv_chance = 0.75;
+            }
+
+        }
+    }
+    CatalogReferenceSet("Behavior,AlarakEnslavedSoulsArmor,Modification.ShieldArmorBonus", lp_player, FixedToString(lv_armor, c_fixedPrecisionAny));
+    CatalogReferenceSet("Behavior,AlarakEnslavedSoulsArmor,DamageResponse.Chance", lp_player, FixedToString(lv_chance, c_fixedPrecisionAny));
+    CatalogReferenceSet("Effect,AlarakSoulShieldReflectionDamage,Amount", lp_player, FixedToString(lv_dmg, c_fixedPrecisionAny));
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: instant-revive
+//--------------------------------------------------------------------------------------------------
+bool libF5DF6CEA_gt_instantrevive_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    PlayerCreateEffectPoint(EventPlayer(), "HeroInstantRevive", PlayerStartLocation(EventPlayer()));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libF5DF6CEA_gt_instantrevive_Init () {
+    libF5DF6CEA_gt_instantrevive = TriggerCreate("libF5DF6CEA_gt_instantrevive_Func");
+    TriggerAddEventChatMessage(libF5DF6CEA_gt_instantrevive, c_playerAny, "reviv", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Alarak_SoulAbsorption_Impact
+//--------------------------------------------------------------------------------------------------
+bool libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_missile;
+    unit lv_alarak;
+    fixed lv_amout;
+    int lv_p;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_missile = EventPlayerEffectUsedUnit(c_effectUnitSource);
+    lv_alarak = EventPlayerEffectUsedUnit(c_effectUnitCaster);
+    lv_amout = UnitGetCustomValue(lv_missile, 63);
+    lv_p = UnitGetOwner(lv_alarak);
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libF5DF6CEA_gv_alarak_SoulCount[lv_p] += (lv_amout / libCOMI_gv_cM_Alarak_SoulAbsorption_FoodFactor);
+    libF5DF6CEA_gf_UpdateSoulShield(lv_p);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Init () {
+    libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact = TriggerCreate("libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Func");
+    TriggerAddEventPlayerEffectUsed(libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact, c_playerAny, libCOMI_gv_cM_Alarak_SoulAbsorption_ImpactEffect);
+}
+
+void libF5DF6CEA_InitTriggers () {
+    libF5DF6CEA_gt_instantrevive_Init();
+    libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool libF5DF6CEA_InitLib_completed = false;
+
+void libF5DF6CEA_InitLib () {
+    if (libF5DF6CEA_InitLib_completed) {
+        return;
+    }
+
+    libF5DF6CEA_InitLib_completed = true;
+
+    libF5DF6CEA_InitLibraries();
+    libF5DF6CEA_InitVariables();
+    libF5DF6CEA_InitTriggers();
+}
+

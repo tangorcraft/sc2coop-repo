@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilEffectTarget id="PhaseCannonSentry">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Flags index="RangeUseCasterRadius" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="100"/>
+            <Charge Link="Abil/SpawnPhaseCannon"/>
+            <Cooldown Link="SpawnPhaseCannon" Location="Unit" TimeUse="20"/>
+        </Cost>
+        <Placeholder value="PhotonCannon"/>
+        <Range value="8"/>
+        <ProducedUnitArray value="PhotonCannon"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannonSentry"/>
+        <PlaceUnit value="PhotonCannon"/>
+    </CAbilEffectTarget>
+</Catalog>

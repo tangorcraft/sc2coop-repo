@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit id="AlarakCoop">
+        <BehaviorArray index="0" Link="AlarakEnslavedSoulsArmor"/>
+        <BehaviorArray index="1" Link="AllUnitBehaviorController"/>
+        <BehaviorArray index="2" Link="SoulAbsorption"/>
+        <BehaviorArray index="3" Link="AlarakTheStrongestSurvive"/>
+        <BehaviorArray index="4" Link="AlarakEmpowerDisplay"/>
+        <BehaviorArray Link="HeroCCImmunity"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="EnslavedSoulsArmor" Type="Passive" Behavior="AlarakEnslavedSoulsArmor" Row="1" Column="4"/>
+        </CardLayouts>
+    </CUnit>
+</Catalog>

@@ -1,0 +1,18 @@
+include "LibCOOC"
+
+//--------------------------------------------------------------------------------------------------
+// Library: alarak_ex
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+fixed[libCOOC_gv_cCC_MAXPLAYERS + 1] libF5DF6CEA_gv_alarak_SoulCount;
+
+// Function Declarations
+void libF5DF6CEA_gf_UpdateSoulShield (int lp_player);
+
+// Trigger Declarations
+trigger libF5DF6CEA_gt_instantrevive;
+trigger libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact;
+
+// Library Initialization
+void libF5DF6CEA_InitVariables ();
+

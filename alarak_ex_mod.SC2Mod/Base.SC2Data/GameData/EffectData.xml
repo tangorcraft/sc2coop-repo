@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectDamage id="AlarakSoulShieldReflectionDamage">
+        <ValidatorArray value="NotInvulnerable"/>
+        <EditorCategories value="Race:Protoss"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <Death value="Electrocute"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectSwitch id="AlarakSoulShieldReflectionSwitch">
+        <CaseArray Validator="IsHidden" Effect="AlarakSoulShieldReflectionSearch"/>
+        <CaseDefault value="AlarakSoulShieldReflectionDamage"/>
+    </CEffectSwitch>
+    <CEffectEnumArea id="AlarakSoulShieldReflectionSearch">
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="4" Effect="AlarakSoulShieldReflectionDamage"/>
+    </CEffectEnumArea>
+</Catalog>

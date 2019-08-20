@@ -1,0 +1,11 @@
+﻿Abil/Name/PhaseCannonSentry=Phase Cannon
+Button/Name/PhaseCannonSentry=Phase Cannon
+Button/Tooltip/PhaseCannonSentry=Phases in a Photon Cannon that lasts for <d ref="Behavior,PhaseCannonTimedLifeSentry,Duration"/> seconds before leaving the battlefield.<n/><n/>The Photon Cannon must be placed within a power field.
+DocInfo/DescShort=Any
+DocInfo/Name=Just Another StarCraft II Mod
+Effect/Name/ChronoFieldInitialSet=Chrono Field Initial Set
+Effect/Name/PhaseCannonInitialStunSentry=Phase Cannon Initial Stun
+Effect/Name/PhaseCannonSentry=Phase Cannon
+Effect/Name/PhaseCannonTimedLifeSentry=Phase Cannon Timed Life
+Param/Value/lib_35C394B7_32EF4F78=Karax Mastery Swap
+Param/Value/lib_35C394B7_A095A81F=Not Karax?
