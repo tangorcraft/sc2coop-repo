@@ -16,6 +16,7 @@ void lib35C394B7_InitLibraries () {
 void lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList2 (int lp_player) {
     // Automatic Variable Declarations
     // Implementation
+    libNtve_gf_SetUpgradeLevelForPlayer(lp_player, "KaraxCommander", 0);
     lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("Zealot", lp_player);
     lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("ZealotPurifier", lp_player);
     lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("ZealotPurifierReviveCorpse", lp_player);
@@ -27,13 +28,14 @@ void lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList2 (int lp_player) {
     lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("PhoenixPurifier", lp_player);
     lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("Carrier", lp_player);
     lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("CarrierAiur", lp_player);
+    libNtve_gf_SetUpgradeLevelForPlayer(lp_player, "KaraxCommander", 1);
 }
 
 void lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore (string lp_unitType, int lp_player) {
     // Automatic Variable Declarations
     // Implementation
-    libNtve_gf_CatalogFieldValueModifyBasedOnDefaultValue(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(c_resourceTypeMinerals) + "]", lp_player, 1.3, c_upgradeOperationMultiply);
-    libNtve_gf_CatalogFieldValueModifyBasedOnDefaultValue(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(c_resourceTypeVespene) + "]", lp_player, 1.3, c_upgradeOperationMultiply);
+    libNtve_gf_CatalogFieldValueModifyBasedOnDefaultValue(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(c_resourceTypeMinerals) + "]", lp_player, 1.0, c_upgradeOperationMultiply);
+    libNtve_gf_CatalogFieldValueModifyBasedOnDefaultValue(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(c_resourceTypeVespene) + "]", lp_player, 1.0, c_upgradeOperationMultiply);
 }
 
 void lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList3 (int lp_player) {

@@ -13,6 +13,7 @@
             <FlagAction/>
             <Parameter Type="ParamDef" Library="35C394B7" Id="FBB1A063"/>
             <FunctionCall Type="Comment" Library="35C394B7" Id="61516817"/>
+            <FunctionCall Type="FunctionCall" Library="35C394B7" Id="6101E98C"/>
             <FunctionCall Type="FunctionCall" Library="35C394B7" Id="D29E32DB"/>
             <FunctionCall Type="FunctionCall" Library="35C394B7" Id="BF26C3CF"/>
             <FunctionCall Type="FunctionCall" Library="35C394B7" Id="CBC67C0E"/>
@@ -24,6 +25,7 @@
             <FunctionCall Type="FunctionCall" Library="35C394B7" Id="EC67158B"/>
             <FunctionCall Type="FunctionCall" Library="35C394B7" Id="196206F5"/>
             <FunctionCall Type="FunctionCall" Library="35C394B7" Id="80D35BFB"/>
+            <FunctionCall Type="FunctionCall" Library="35C394B7" Id="E1962497"/>
         </Element>
         <Element Type="ParamDef" Id="FBB1A063">
             <ParameterType>
@@ -39,6 +41,27 @@
             <Comment>
                 Restore Karax unit cost to 130%
             </Comment>
+        </Element>
+        <Element Type="FunctionCall" Id="6101E98C">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="9F8EF8FB"/>
+            <Parameter Type="Param" Library="35C394B7" Id="3339F84A"/>
+            <Parameter Type="Param" Library="35C394B7" Id="2932D945"/>
+            <Parameter Type="Param" Library="35C394B7" Id="B1AB0EB5"/>
+        </Element>
+        <Element Type="Param" Id="3339F84A">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="C7188352"/>
+            <Parameter Type="ParamDef" Library="35C394B7" Id="FBB1A063"/>
+        </Element>
+        <Element Type="Param" Id="2932D945">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="3BFEECBB"/>
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="B1AB0EB5">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="7E5035EE"/>
+            <Value>KaraxCommander</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
         </Element>
         <Element Type="FunctionCall" Id="D29E32DB">
             <FunctionDef Type="FunctionDef" Library="35C394B7" Id="59AF7806"/>
@@ -205,6 +228,27 @@
             <ParameterDef Type="ParamDef" Library="35C394B7" Id="D85B746C"/>
             <Parameter Type="ParamDef" Library="35C394B7" Id="FBB1A063"/>
         </Element>
+        <Element Type="FunctionCall" Id="E1962497">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="9F8EF8FB"/>
+            <Parameter Type="Param" Library="35C394B7" Id="9D4C88D2"/>
+            <Parameter Type="Param" Library="35C394B7" Id="59BE5E3F"/>
+            <Parameter Type="Param" Library="35C394B7" Id="1E2EFB22"/>
+        </Element>
+        <Element Type="Param" Id="9D4C88D2">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="C7188352"/>
+            <Parameter Type="ParamDef" Library="35C394B7" Id="FBB1A063"/>
+        </Element>
+        <Element Type="Param" Id="59BE5E3F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="3BFEECBB"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="1E2EFB22">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="7E5035EE"/>
+            <Value>KaraxCommander</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
         <Element Type="FunctionDef" Id="59AF7806">
             <FlagAction/>
             <Parameter Type="ParamDef" Library="35C394B7" Id="A9425B0D"/>
@@ -248,7 +292,7 @@
         </Element>
         <Element Type="Param" Id="9E69E0CA">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="7B611C6E"/>
-            <Value>1.3</Value>
+            <Value>1.0</Value>
             <ValueType Type="fixed"/>
         </Element>
         <Element Type="Param" Id="3B73578B">
@@ -288,7 +332,7 @@
         </Element>
         <Element Type="Param" Id="AE0F1A83">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="7B611C6E"/>
-            <Value>1.3</Value>
+            <Value>1.0</Value>
             <ValueType Type="fixed"/>
         </Element>
         <Element Type="Param" Id="3B48B047">
