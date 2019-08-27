@@ -7,5 +7,7 @@
             <ModifyFraction value="0"/>
             <ModifyMinimumDamage value="1"/>
         </DamageResponse>
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="HaveAlarakEnslavedSoulsArmorUpgrade"/>
     </CBehaviorBuff>
 </Catalog>

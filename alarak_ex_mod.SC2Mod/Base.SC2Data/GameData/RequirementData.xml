@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="HaveAlarakEnslavedSoulsArmor">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeEnslavedSoulsArmorCompleteOnly3549482196"/>
+        <NodeArray index="Show" Link="AndCountUpgradeAlarakCommanderCompleteOnlyGTECountUpgradeCommanderLevelCompleteOnly14"/>
+    </CRequirement>
+    <CRequirement id="LearnAlarakEnslavedSoulsArmor">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUnitTwilightCouncilCompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeAlarakCommanderCompleteOnlyNotCountUpgradeEnslavedSoulsArmorQueuedOrBetterGTECountUpgradeCommanderLevelCompleteOnly14"/>
+    </CRequirement>
+</Catalog>

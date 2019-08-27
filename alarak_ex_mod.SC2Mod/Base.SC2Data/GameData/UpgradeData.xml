@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="EnslavedSoulsArmor">
+        <Flags index="TechTreeCheat" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendantspermanentlybetter.dds"/>
+        <Alert value="ResearchComplete"/>
+        <ScoreResult value="BuildOrder"/>
+        <EditorCategories value="Race:Protoss,UpgradeType:Talents"/>
+        <AffectedUnitArray value="AlarakCoop"/>
+    </CUpgrade>
+</Catalog>

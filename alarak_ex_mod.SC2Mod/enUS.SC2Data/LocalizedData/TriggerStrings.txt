@@ -2,7 +2,6 @@
 Library/Name/F5DF6CEA=alarak_ex
 ParamDef/Name/lib_F5DF6CEA_3C964FA6=player
 Trigger/Name/lib_F5DF6CEA_8528E906=Alarak_SoulAbsorption_Impact
-Trigger/Name/lib_F5DF6CEA_C81C3B5D=instant-revive
 Variable/Name/lib_F5DF6CEA_08B81CA6=amout
 Variable/Name/lib_F5DF6CEA_090B805F=chance
 Variable/Name/lib_F5DF6CEA_0FF5C887=armor

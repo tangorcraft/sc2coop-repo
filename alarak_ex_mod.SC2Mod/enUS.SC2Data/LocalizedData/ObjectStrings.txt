@@ -1,2 +1,21 @@
 ﻿Actor/Name/AlarakSoulShieldReflection=AlarakSoulShieldReflection
+Actor/Name/AlarakSoulShieldReflection2=AlarakVengefulSoulReflection
+Behavior/Name/AlarakEnslavedSoulsArmor=AlarakEnslavedSoulsArmor
+Button/EditorPrefix/AlarakEnslavedSoulsArmorLock=Coop Progression - Alarak -
+Button/EditorPrefix/AlarakEnslavedSoulsArmorLocked=Coop Progression - Alarak -
 Button/EditorPrefix/EnslavedSoulsArmor=Alarak -
+Button/EditorPrefix/EnslavedSoulsArmorResearch=Alarak -
+Button/EditorSuffix/AlarakEnslavedSoulsArmorLock=(Locked)
+Button/EditorSuffix/AlarakEnslavedSoulsArmorLocked=(Locked)
+Button/EditorSuffix/EnslavedSoulsArmorResearch=(Research)
+Requirement/EditorPrefix/HaveAlarakEnslavedSoulsArmor=Alarak -
+Requirement/EditorPrefix/LearnAlarakEnslavedSoulsArmor=Alarak -
+Requirement/Name/HaveAlarakEnslavedSoulsArmor=Have Alarak Enslaved Souls Armor
+Requirement/Name/LearnAlarakEnslavedSoulsArmor=Learn Alarak Enslaved Souls Armor
+RequirementNode/Name/AndCountUpgradeAlarakCommanderCompleteOnlyNotCountUpgradeEnslavedSoulsArmorQueuedOrBetterGTECountUpgradeCommanderLevelCompleteOnly14=CountUpgrade(AlarakCommander,CompleteOnly) && !CountUpgrade(EnslavedSoulsArmor,QueuedOrBetter) && CountUpgrade(CommanderLevel,CompleteOnly) >= 14
+RequirementNode/Name/CountUpgradeEnslavedSoulsArmorCompleteOnly3549482196=CountUpgrade(EnslavedSoulsArmor,CompleteOnly){Research Enslaved Souls Armor at the Forge}
+RequirementNode/Name/CountUpgradeEnslavedSoulsArmorQueuedOrBetter=CountUpgrade(EnslavedSoulsArmor,QueuedOrBetter)
+RequirementNode/Name/NotCountUpgradeEnslavedSoulsArmorQueuedOrBetter=!CountUpgrade(EnslavedSoulsArmor,QueuedOrBetter)
+Upgrade/EditorPrefix/EnslavedSoulsArmor=Alarak -
+Validator/EditorPrefix/HaveAlarakEnslavedSoulsArmorUpgrade=Alarak -
+Validator/Name/HaveAlarakEnslavedSoulsArmorUpgrade=Have Alarak Enslaved Souls Armor Upgrade

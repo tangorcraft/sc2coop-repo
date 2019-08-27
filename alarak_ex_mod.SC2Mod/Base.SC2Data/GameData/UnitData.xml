@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CUnit id="AlarakCoop">
-        <BehaviorArray index="0" Link="AlarakEnslavedSoulsArmor"/>
-        <BehaviorArray index="1" Link="AllUnitBehaviorController"/>
-        <BehaviorArray index="2" Link="SoulAbsorption"/>
-        <BehaviorArray index="3" Link="AlarakTheStrongestSurvive"/>
-        <BehaviorArray index="4" Link="AlarakEmpowerDisplay"/>
-        <BehaviorArray Link="HeroCCImmunity"/>
+        <BehaviorArray Link="AlarakEnslavedSoulsArmor"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="EnslavedSoulsArmor" Type="Passive" Behavior="AlarakEnslavedSoulsArmor" Row="1" Column="4"/>
+            <LayoutButtons Face="EnslavedSoulsArmor" Type="Passive" Requirements="HaveAlarakEnslavedSoulsArmor" Row="1" Column="4"/>
+            <LayoutButtons Face="AlarakEnslavedSoulsArmorLocked" Type="Passive" Requirements="AlarakLevel14" Row="1" Column="4"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="AlarakReviveBeacon">
+        <CardLayouts index="0">
+            <LayoutButtons Face="EnslavedSoulsArmor" Type="Passive" Requirements="HaveAlarakEnslavedSoulsArmor" Row="1" Column="4"/>
+            <LayoutButtons Face="AlarakEnslavedSoulsArmorLocked" Type="Passive" Requirements="AlarakLevel14" Row="1" Column="4"/>
+        </CardLayouts>
+    </CUnit>
+    <!--CUnit id="XelNagaShadowStep" parent="MISSILE">-->
+    <!--        <Race value="Prot"/>-->
+    <!--        <Mover value="XelNagaShadowStepMover"/>-->
+    <!--        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>-->
+    <!--    </CUnit-->
+    <CUnit id="Forge">
+        <CardLayouts index="0">
+            <LayoutButtons Face="EnslavedSoulsArmorResearch" Type="AbilCmd" AbilCmd="ForgeResearch,Research25" Row="2" Column="2"/>
+            <LayoutButtons Face="AlarakEnslavedSoulsArmorLocked" Type="Passive" Requirements="AlarakLevel14" Row="2" Column="2"/>
         </CardLayouts>
     </CUnit>
 </Catalog>

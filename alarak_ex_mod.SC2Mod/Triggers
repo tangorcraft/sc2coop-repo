@@ -2,68 +2,10 @@
 <TriggerData>
     <Library Id="F5DF6CEA">
         <Root>
-            <Item Type="Trigger" Library="F5DF6CEA" Id="C81C3B5D"/>
             <Item Type="Variable" Library="F5DF6CEA" Id="80BE7DF1"/>
             <Item Type="Trigger" Library="F5DF6CEA" Id="8528E906"/>
             <Item Type="FunctionDef" Library="F5DF6CEA" Id="DEE7CBC3"/>
         </Root>
-        <Element Type="Trigger" Id="C81C3B5D">
-            <Event Type="FunctionCall" Library="F5DF6CEA" Id="4EA8BEBD"/>
-            <Action Type="FunctionCall" Library="F5DF6CEA" Id="236F009A"/>
-        </Element>
-        <Element Type="FunctionCall" Id="4EA8BEBD">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000121"/>
-            <Parameter Type="Param" Library="F5DF6CEA" Id="35F2212F"/>
-            <Parameter Type="Param" Library="F5DF6CEA" Id="6FA88C81"/>
-            <Parameter Type="Param" Library="F5DF6CEA" Id="D5921513"/>
-        </Element>
-        <Element Type="Param" Id="35F2212F">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000191"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="2999701E"/>
-        </Element>
-        <Element Type="Param" Id="6FA88C81">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000193"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000073"/>
-        </Element>
-        <Element Type="Param" Id="D5921513">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000192"/>
-            <Value>reviv</Value>
-            <ValueType Type="string"/>
-        </Element>
-        <Element Type="FunctionCall" Id="236F009A">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="AB4663C2"/>
-            <Parameter Type="Param" Library="F5DF6CEA" Id="E27625B3"/>
-            <Parameter Type="Param" Library="F5DF6CEA" Id="CCD76BCB"/>
-            <Parameter Type="Param" Library="F5DF6CEA" Id="144FA4A3"/>
-        </Element>
-        <Element Type="Param" Id="E27625B3">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="EA2CBB1A"/>
-            <FunctionCall Type="FunctionCall" Library="F5DF6CEA" Id="13826222"/>
-        </Element>
-        <Element Type="FunctionCall" Id="13826222">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
-        </Element>
-        <Element Type="Param" Id="CCD76BCB">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="FF6AF0FE"/>
-            <Value>HeroInstantRevive</Value>
-            <ValueType Type="gamelink"/>
-            <ValueGameType Type="Effect"/>
-        </Element>
-        <Element Type="Param" Id="144FA4A3">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="01D6D660"/>
-            <FunctionCall Type="FunctionCall" Library="F5DF6CEA" Id="B5AB8DBA"/>
-        </Element>
-        <Element Type="FunctionCall" Id="B5AB8DBA">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000151"/>
-            <Parameter Type="Param" Library="F5DF6CEA" Id="EAA2C639"/>
-        </Element>
-        <Element Type="Param" Id="EAA2C639">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000240"/>
-            <FunctionCall Type="FunctionCall" Library="F5DF6CEA" Id="38FAD0C7"/>
-        </Element>
-        <Element Type="FunctionCall" Id="38FAD0C7">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
-        </Element>
         <Element Type="Variable" Id="80BE7DF1">
             <VariableType>
                 <Type Value="fixed"/>
@@ -81,6 +23,7 @@
             <Variable Type="Variable" Library="F5DF6CEA" Id="08B81CA6"/>
             <Variable Type="Variable" Library="F5DF6CEA" Id="AF08C963"/>
             <Event Type="FunctionCall" Library="F5DF6CEA" Id="2C8A3761"/>
+            <Condition Type="FunctionCall" Library="F5DF6CEA" Id="446EF6CD"/>
             <Action Type="FunctionCall" Library="F5DF6CEA" Id="6E9099AB"/>
             <Action Type="FunctionCall" Library="F5DF6CEA" Id="08216E7F"/>
         </Element>
@@ -170,6 +113,45 @@
         <Element Type="Param" Id="14DFC6FA">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="6FB1C942"/>
             <Variable Type="Variable" Library="COMI" Id="0E608445"/>
+        </Element>
+        <Element Type="FunctionCall" Id="446EF6CD">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="C439C375"/>
+            <Parameter Type="Param" Library="F5DF6CEA" Id="1885DC65"/>
+            <Parameter Type="Param" Library="F5DF6CEA" Id="E5884CBF"/>
+            <Parameter Type="Param" Library="F5DF6CEA" Id="29DCDE02"/>
+        </Element>
+        <Element Type="Param" Id="1885DC65">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
+            <FunctionCall Type="FunctionCall" Library="F5DF6CEA" Id="C6611177"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C6611177">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000255"/>
+            <Parameter Type="Param" Library="F5DF6CEA" Id="8C624767"/>
+            <Parameter Type="Param" Library="F5DF6CEA" Id="E0D527D7"/>
+            <Parameter Type="Param" Library="F5DF6CEA" Id="0BC584D9"/>
+        </Element>
+        <Element Type="Param" Id="8C624767">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="448F39DC"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="D78D6018"/>
+        </Element>
+        <Element Type="Param" Id="E0D527D7">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000447"/>
+            <Value>EnslavedSoulsArmor</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="Param" Id="0BC584D9">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000446"/>
+            <Variable Type="Variable" Library="F5DF6CEA" Id="AF08C963"/>
+        </Element>
+        <Element Type="Param" Id="E5884CBF">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="500677B2"/>
+        </Element>
+        <Element Type="Param" Id="29DCDE02">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
+            <Value>0</Value>
+            <ValueType Type="int"/>
         </Element>
         <Element Type="FunctionCall" Id="6E9099AB">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="DB01ECDC"/>

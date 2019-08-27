@@ -1,8 +1,13 @@
-﻿Behavior/Name/AlarakEnslavedSoulsArmor=AlarakEnslavedSoulsArmor
+﻿Button/Name/AlarakEnslavedSoulsArmorLocked=Enslaved Souls Armor
 Button/Name/EnslavedSoulsArmor=Enslaved Souls Armor
+Button/Name/EnslavedSoulsArmorResearch=Enslaved Souls Armor
 Button/Tooltip/EnslavedSoulsArmor=Absorbed enemy souls strengthen Alarak's shield armor with +<d ref="Behavior,AlarakEnslavedSoulsArmor,Modification.ShieldArmorBonus" precision="2"/>.<n/>Alarak have <d ref="Behavior,AlarakEnslavedSoulsArmor,DamageResponse.Chance*100.0" precision="2"/>% chance to reflect enemy attack back, dealing <d ref="Effect,AlarakSoulShieldReflectionDamage,Amount" precision="2"/> damage.
+Button/Tooltip/EnslavedSoulsArmorResearch=Absorbed enemy souls will strengthen Alarak's shield armor.<n/>Alarak will have a chance to reflect enemy attack back.
 DocInfo/DescShort=Any
 DocInfo/Name=Just Another StarCraft II Mod
 Effect/Name/AlarakSoulShieldReflectionDamage=AlarakSoulShieldReflectionDamage
 Effect/Name/AlarakSoulShieldReflectionSearch=AlarakSoulShieldReflectionSearch
 Effect/Name/AlarakSoulShieldReflectionSwitch=AlarakSoulShieldReflectionSwitch
+Effect/Name/AlarakVengefulSoulReflectionDamage=AlarakVengefulSoulReflectionDamage
+RequirementNode/Tooltip/CountUpgradeEnslavedSoulsArmorCompleteOnly3549482196=Research Enslaved Souls Armor at the Forge
+Upgrade/Name/EnslavedSoulsArmor=Enslaved Souls Armor

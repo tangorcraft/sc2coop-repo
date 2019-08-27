@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CButton id="AlarakEnslavedSoulsArmorLocked" parent="AbilLocked">
+        <Tooltip value="Button/Tooltip/AbilLockedLevel14"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="EnslavedSoulsArmor">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendantspermanentlybetter.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="EnslavedSoulsArmorResearch">
         <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendantspermanentlybetter.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>

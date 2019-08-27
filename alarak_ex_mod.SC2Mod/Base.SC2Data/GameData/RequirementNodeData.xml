@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementAnd id="AndCountUpgradeAlarakCommanderCompleteOnlyNotCountUpgradeEnslavedSoulsArmorQueuedOrBetterGTECountUpgradeCommanderLevelCompleteOnly14">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeAlarakCommanderCompleteOnly"/>
+        <OperandArray value="NotCountUpgradeEnslavedSoulsArmorQueuedOrBetter"/>
+        <OperandArray value="GTECountUpgradeCommanderLevelCompleteOnly14"/>
+    </CRequirementAnd>
+    <CRequirementCountUpgrade id="CountUpgradeEnslavedSoulsArmorCompleteOnly3549482196">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="EnslavedSoulsArmor" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeEnslavedSoulsArmorQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="EnslavedSoulsArmor" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementNot id="NotCountUpgradeEnslavedSoulsArmorQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeEnslavedSoulsArmorQueuedOrBetter"/>
+    </CRequirementNot>
+</Catalog>

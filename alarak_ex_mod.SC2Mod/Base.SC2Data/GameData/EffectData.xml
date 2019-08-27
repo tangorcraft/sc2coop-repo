@@ -7,8 +7,16 @@
         <Death value="Electrocute"/>
         <Amount value="5"/>
     </CEffectDamage>
+    <CEffectDamage id="AlarakVengefulSoulReflectionDamage">
+        <ValidatorArray value="NotInvulnerable"/>
+        <EditorCategories value="Race:Protoss"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <Amount value="500"/>
+        <Death value="Electrocute"/>
+    </CEffectDamage>
     <CEffectSwitch id="AlarakSoulShieldReflectionSwitch">
         <CaseArray Validator="IsHidden" Effect="AlarakSoulShieldReflectionSearch"/>
+        <CaseArray Validator="TargetIsAlly" Effect="AlarakVengefulSoulReflectionDamage"/>
         <CaseDefault value="AlarakSoulShieldReflectionDamage"/>
     </CEffectSwitch>
     <CEffectEnumArea id="AlarakSoulShieldReflectionSearch">

@@ -77,26 +77,6 @@ void libF5DF6CEA_gf_UpdateSoulShield (int lp_player) {
 
 // Triggers
 //--------------------------------------------------------------------------------------------------
-// Trigger: instant-revive
-//--------------------------------------------------------------------------------------------------
-bool libF5DF6CEA_gt_instantrevive_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    PlayerCreateEffectPoint(EventPlayer(), "HeroInstantRevive", PlayerStartLocation(EventPlayer()));
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libF5DF6CEA_gt_instantrevive_Init () {
-    libF5DF6CEA_gt_instantrevive = TriggerCreate("libF5DF6CEA_gt_instantrevive_Func");
-    TriggerAddEventChatMessage(libF5DF6CEA_gt_instantrevive, c_playerAny, "reviv", true);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: Alarak_SoulAbsorption_Impact
 //--------------------------------------------------------------------------------------------------
 bool libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Func (bool testConds, bool runActions) {
@@ -112,6 +92,13 @@ bool libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Func (bool testConds, bool runA
     lv_alarak = EventPlayerEffectUsedUnit(c_effectUnitCaster);
     lv_amout = UnitGetCustomValue(lv_missile, 63);
     lv_p = UnitGetOwner(lv_alarak);
+
+    // Conditions
+    if (testConds) {
+        if (!((TechTreeUpgradeCount(lv_p, "EnslavedSoulsArmor", c_techCountCompleteOnly) != 0))) {
+            return false;
+        }
+    }
 
     // Actions
     if (!runActions) {
@@ -130,7 +117,6 @@ void libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Init () {
 }
 
 void libF5DF6CEA_InitTriggers () {
-    libF5DF6CEA_gt_instantrevive_Init();
     libF5DF6CEA_gt_Alarak_SoulAbsorption_Impact_Init();
 }
 
