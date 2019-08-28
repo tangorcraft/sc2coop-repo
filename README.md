@@ -31,7 +31,9 @@ In addition to the above buff, this variant also allows other protoss commanders
 # Alarak Suggestion
 #### alarak_ex_mod.SC2Mod
 I tried to implement a mechanic similar to Abathur and Dehaka (the more enemy units is killed, the more powerful they become). Alarak hero unit have enough damage and good offensive abilities, so I though about increasing his defenses.
-* Added "Enslaved Souls Armor" to Alarak. This armor becomes stronger when Alarak uses "Soul Absorption".
+* Added "Enslaved Souls Armor" to Alarak. This armor becomes stronger when Alarak uses "Soul Absorption" on enemy units.
+  * Requires commander level 14.
+  * Needs to be researched at Forge: 150/150/90sec. Research require Death Council (Twilight Council).
   * Increases Shield Armor.
   * Increases chance to reflect damage back to the attacking unit (initial chance is 5%). Damage is nullified.
   * Increases damage dealt to attacking unit, when reflection triggered (initial damage is 5).
