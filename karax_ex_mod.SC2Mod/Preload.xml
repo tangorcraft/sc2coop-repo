@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Preload>
 <Actor id="SYSTEM_ActorConfig"/>
-<Sound id="Alert_ProtossBuildError"/>
 <Unit id="Colossus"/>
 <Unit id="Nexus"/>
 <Unit id="Pylon"/>

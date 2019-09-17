@@ -1,7 +1,7 @@
 include "TriggerLibs/natives"
 
 //--------------------------------------------------------------------------------------------------
-// Library: Test Lib
+// Library: Karax Ex
 //--------------------------------------------------------------------------------------------------
 // Function Declarations
 void lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList2 (int lp_player);

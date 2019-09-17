@@ -2,7 +2,7 @@
 FunctionDef/Name/lib_35C394B7_3E94FABD=MasteryKaraxStructureCostList
 FunctionDef/Name/lib_35C394B7_59AF7806=MasteryKaraxArmyCostReductionRestore
 FunctionDef/Name/lib_35C394B7_88281E66=MasteryKaraxArmyCostList
-Library/Name/35C394B7=Test Lib
+Library/Name/35C394B7=Karax Ex
 ParamDef/Name/lib_35C394B7_26684B32=UnitType
 ParamDef/Name/lib_35C394B7_35F0AE03=Player
 ParamDef/Name/lib_35C394B7_5F92ACBE=UpgradeCount

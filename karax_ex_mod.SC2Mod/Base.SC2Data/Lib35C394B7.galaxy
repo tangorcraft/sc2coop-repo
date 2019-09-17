@@ -4,7 +4,7 @@ include "LibCOOC"
 include "Lib35C394B7_h"
 
 //--------------------------------------------------------------------------------------------------
-// Library: Test Lib
+// Library: Karax Ex
 //--------------------------------------------------------------------------------------------------
 // External Library Initialization
 void lib35C394B7_InitLibraries () {
@@ -113,14 +113,14 @@ bool lib35C394B7_gt_KaraxMasterySwap_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    TriggerEnable(TriggerGetCurrent(), false);
     if ((libCOOC_gf_ActiveCommanderForPlayer(lv_p) == "ProtossKarax")) {
-        libNtve_gf_UIErrorMessage(PlayerGroupSingle(lv_p), StringExternal("Param/Value/lib_35C394B7_32EF4F78"), SoundLink("Alert_ProtossBuildError", -1));
+        TriggerEnable(TriggerGetCurrent(), false);
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_35C394B7_EDBC5447"));
         lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList2(lv_p);
         lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList3(lv_p);
     }
     else {
-        libNtve_gf_UIErrorMessage(PlayerGroupSingle(lv_p), StringExternal("Param/Value/lib_35C394B7_A095A81F"), SoundLink("Alert_ProtossBuildError", -1));
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_35C394B7_AC964A7E"));
     }
     return true;
 }
@@ -128,7 +128,7 @@ bool lib35C394B7_gt_KaraxMasterySwap_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void lib35C394B7_gt_KaraxMasterySwap_Init () {
     lib35C394B7_gt_KaraxMasterySwap = TriggerCreate("lib35C394B7_gt_KaraxMasterySwap_Func");
-    TriggerAddEventChatMessage(lib35C394B7_gt_KaraxMasterySwap, c_playerAny, "swap", true);
+    TriggerAddEventChatMessage(lib35C394B7_gt_KaraxMasterySwap, c_playerAny, "-mswap", true);
 }
 
 void lib35C394B7_InitTriggers () {
