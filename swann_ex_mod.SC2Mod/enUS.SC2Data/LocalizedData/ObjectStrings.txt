@@ -1,0 +1,10 @@
+﻿Abil/EditorPrefix/SupplyDropSwann=Command Center -
+Abil/EditorSuffix/SupplyDropSwann=(Swann)
+Behavior/EditorPrefix/ExtendInMove=Wraith -
+Behavior/EditorPrefix/MoveTracking=Wraith -
+Behavior/EditorPrefix/UpdateInMove=Wraith -
+Behavior/Name/ExtendInMove=Extend In Move
+Behavior/Name/MoveTracking=Move Tracking
+Effect/EditorPrefix/MoveTrackAB=Wraith -
+Validator/Name/CasterHaveUpdateInMove=Caster Have Update In Move
+Validator/Name/CasterIsMovingOrHaveUpdateInMove=Caster Is Moving Or Have Update In Move

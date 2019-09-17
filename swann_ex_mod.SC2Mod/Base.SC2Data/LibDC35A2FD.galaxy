@@ -1,0 +1,60 @@
+include "TriggerLibs/NativeLib"
+include "LibCOOC"
+
+include "LibDC35A2FD_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: SwannTest
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void libDC35A2FD_InitLibraries () {
+    libNtve_InitVariables();
+    libCOOC_InitVariables();
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: Enable Extra Supply
+//--------------------------------------------------------------------------------------------------
+bool libDC35A2FD_gt_EnableExtraSupply_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((libCOOC_gf_ActiveCommanderForPlayer(EventPlayer()) == "TerranSwann")) {
+        TriggerEnable(TriggerGetCurrent(), false);
+        TechTreeAbilityAllow(EventPlayer(), AbilityCommand("SupplyDropSwann", 0), true);
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_DC35A2FD_C78B3214"));
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libDC35A2FD_gt_EnableExtraSupply_Init () {
+    libDC35A2FD_gt_EnableExtraSupply = TriggerCreate("libDC35A2FD_gt_EnableExtraSupply_Func");
+    TriggerAddEventChatMessage(libDC35A2FD_gt_EnableExtraSupply, c_playerAny, "-supply", true);
+}
+
+void libDC35A2FD_InitTriggers () {
+    libDC35A2FD_gt_EnableExtraSupply_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool libDC35A2FD_InitLib_completed = false;
+
+void libDC35A2FD_InitLib () {
+    if (libDC35A2FD_InitLib_completed) {
+        return;
+    }
+
+    libDC35A2FD_InitLib_completed = true;
+
+    libDC35A2FD_InitLibraries();
+    libDC35A2FD_InitTriggers();
+}
+

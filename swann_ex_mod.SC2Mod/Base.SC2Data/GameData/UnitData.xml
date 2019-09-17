@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit id="CommandCenter">
+        <AbilArray Link="SupplyDropSwann"/>
+        <!--LayoutButtons Face="TrainKelMorianWorkers" Type="AbilCmd" AbilCmd="CommandCenterTrain,Train2" Row="0" Column="1"/-->
+        <CardLayouts index="0">
+            <LayoutButtons Face="SupplyDrop" Type="AbilCmd" AbilCmd="SupplyDropSwann,Execute" Row="0" Column="2"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Wraith">
+        <BehaviorArray Link="MoveTracking"/>
+    </CUnit>
+</Catalog>

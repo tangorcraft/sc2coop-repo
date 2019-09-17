@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="MoveTracking">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsMoving"/>
+        <DisableValidatorArray value="HavePulseAmplifier"/>
+        <Period value="0.625"/>
+        <PeriodicEffect value="MoveTrackAB"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SwannBurstLaserMovementBuff">
+        <DisableValidatorArray index="0" value="CasterIsMovingOrHaveUpdateInMove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SwannGeminiMissileMovementBuff">
+        <DisableValidatorArray index="0" value="CasterIsMovingOrHaveUpdateInMove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ExtendInMove">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <Duration value="1.25"/>
+    </CBehaviorBuff>
+</Catalog>
