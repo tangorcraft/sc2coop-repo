@@ -24,7 +24,7 @@ This variant allows Karax's Crono Wave ability and Nexus' Crono Boost ability to
 * Level 11 talent (Instant Pylon/Cannons/Batteries warp)
   * Add 5 range to probe build ability. This will strengthen cannon push strategy for Karax early game.
 * Unit Cost Rediction mastery swap with Struscture Cost Reduction (-1% .. -30%)
-  * To try this, type "swap" message.
+  * To try this, type "-mswap" message.
 
 # Alarak Suggestion
 #### alarak_ex_mod.SC2Mod
@@ -35,3 +35,8 @@ I tried to implement a mechanics similar to Abathur and Dehaka (the more enemy u
   * Increases Shield Armor.
   * Increases chance to reflect damage back to the attacking unit (initial chance is 5%). Damage is nullified.
   * Increases damage dealt to attacking unit, when reflection triggered (initial damage is 5).
+
+# Swann Suggestion
+#### swann_ex_mod.SC2Mod
+* Changed Pulse Amplifier behavior. Now damage buff will persist for about 1 second after Move command.
+* Added "Calldown: Extra Supplies" ability to Command Center. Made it cost 100 minerals instead of energy and have 30 seconds cool down. To activate this ability, type "-supply" message.
