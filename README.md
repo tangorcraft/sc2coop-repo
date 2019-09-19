@@ -38,5 +38,5 @@ I tried to implement a mechanics similar to Abathur and Dehaka (the more enemy u
 
 # Swann Suggestion
 #### swann_ex_mod.SC2Mod
-* Changed Pulse Amplifier behavior. Now damage buff will persist for about 1 second after Move command.
+* Pulse Amplifier will now also give Wraith an ability to attack while moving (when "Move" command is used). Unlike Phoenixes, Wraith can't turn while moving.
 * Added "Calldown: Extra Supplies" ability to Command Center. Made it cost 100 minerals instead of energy and have 30 seconds cool down. To activate this ability, type "-supply" message.

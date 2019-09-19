@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponStrafe id="WraithGndS">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="WraithGLaunchMissile"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Arc value="90"/>
+        <Period value="1.25"/>
+        <DamagePoint value="0.0446"/>
+        <Effect value="WraithGLaunchMissile"/>
+    </CWeaponStrafe>
+    <CWeaponStrafe id="WraithAirS">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="WraithAU"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5.5"/>
+        <Arc value="90"/>
+        <Period value="1.25"/>
+        <DamagePoint value="0.0446"/>
+        <Effect value="WraithAPersistent"/>
+    </CWeaponStrafe>
+</Catalog>

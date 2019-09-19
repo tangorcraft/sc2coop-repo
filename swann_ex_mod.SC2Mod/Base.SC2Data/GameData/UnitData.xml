@@ -8,6 +8,6 @@
         </CardLayouts>
     </CUnit>
     <CUnit id="Wraith">
-        <BehaviorArray Link="MoveTracking"/>
+        <BehaviorArray Link="SwannMovementBuffWeapons"/>
     </CUnit>
 </Catalog>

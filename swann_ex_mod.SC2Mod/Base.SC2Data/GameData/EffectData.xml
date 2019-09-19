@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Catalog>
-    <CEffectApplyBehavior id="MoveTrackAB">
-        <EditorCategories value=""/>
-        <Behavior value="ExtendInMove"/>
-    </CEffectApplyBehavior>
-</Catalog>
