@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="SwannCommanderVehicleWeaponRange">
+        <EffectArray Reference="Weapon,WraithGndS,Range" Value="1"/>
+        <EffectArray Reference="Weapon,WraithAirS,Range" Value="1"/>
+        <EffectArray Reference="Weapon,WraithGndS,MinScanRange" Value="1"/>
+        <EffectArray Reference="Weapon,WraithAirS,MinScanRange" Value="1"/>
+    </CUpgrade>
+</Catalog>

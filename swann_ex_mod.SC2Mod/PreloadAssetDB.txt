@@ -34,6 +34,12 @@ Behavior=AllUnitBehaviorController,CloakDistortionField,ScavengingSystemsMechDea
 Button=Attack,DisplacementField,ImprovedBurstLaser,Move,MoveHoldPosition,MovePatrol,SingularityAnchor,Stop,##id##CloakOff,##id##CloakOn
 Weapon=##id##A,##id##G
 
+[Upgrade]
+id=SwannCommanderVehicleWeaponRange
+asset=Assets\Textures\btn-upgrade-swann-vehiclerangeincrease.dds
+Actor=CODXelNagaConstructBeamLeft,CODXelNagaConstructBeamRight,CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,Hybrid_Dom_CoopBoss_MirrorImage_Death_AS,TerrainMgr
+Alert=UpgradeComplete
+
 [Weapon]
 id=WraithGndS
 asset=Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds
