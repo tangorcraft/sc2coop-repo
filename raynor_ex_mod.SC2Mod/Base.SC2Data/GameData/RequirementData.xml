@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="LearnAdvancedGyroscopicStabilizers">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAdvancedGyroscopicStabilizersQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UseScannerSweepFlying">
+        <EditorCategories value="Race:Terran,TechType:Ability"/>
+        <NodeArray index="Use" Link="Or3100157679CountUnitOrbitalCommandCompleteOnlyAtUnitCountUpgradeAdvancedGyroscopicStabilizersCompleteOnly3627410821TechTreeCheat"/>
+    </CRequirement>
+</Catalog>

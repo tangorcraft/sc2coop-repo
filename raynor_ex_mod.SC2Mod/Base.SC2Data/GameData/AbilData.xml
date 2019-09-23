@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilResearch id="EngineeringBayResearch">
+        <InfoArray index="Research26" Time="60" Upgrade="AdvancedGyroscopicStabilizers">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchAdvancedGyroscopicStabilizers" State="Restricted" Requirements="LearnAdvancedGyroscopicStabilizers">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="ScannerSweep">
+        <CmdButtonArray index="Execute" Requirements="UseScannerSweepFlying">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+</Catalog>

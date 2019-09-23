@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementCountUpgrade id="CountUpgradeAdvancedGyroscopicStabilizersCompleteOnly3627410821TechTreeCheat">
+        <Count Link="AdvancedGyroscopicStabilizers" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeAdvancedGyroscopicStabilizersQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="AdvancedGyroscopicStabilizers" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementNot id="NotCountUpgradeAdvancedGyroscopicStabilizersQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeAdvancedGyroscopicStabilizersQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementOr id="Or3100157679CountUnitOrbitalCommandCompleteOnlyAtUnitCountUpgradeAdvancedGyroscopicStabilizersCompleteOnly3627410821TechTreeCheat">
+        <OperandArray value="CountUnitOrbitalCommandCompleteOnlyAtUnit"/>
+        <OperandArray value="CountUpgradeAdvancedGyroscopicStabilizersCompleteOnly3627410821TechTreeCheat"/>
+    </CRequirementOr>
+</Catalog>

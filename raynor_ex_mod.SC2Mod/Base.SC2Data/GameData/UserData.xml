@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUser id="CampaignPerk">
+        <!--   Raynor   -->
+        <Instances index="46" Id="Raynor">
+            <AbilCmd Abil="EngineeringBayResearch" Cmd="25">
+                <Field Id="AbilityCommand"/>
+            </AbilCmd>
+        </Instances>
+    </CUser>
+</Catalog>

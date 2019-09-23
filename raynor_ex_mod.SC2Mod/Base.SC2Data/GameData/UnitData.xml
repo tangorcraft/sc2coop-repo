@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit id="EngineeringBay">
+        <CardLayouts index="0">
+            <LayoutButtons Face="ResearchAdvancedGyroscopicStabilizers" Type="AbilCmd" AbilCmd="EngineeringBayResearch,Research26" Row="1" Column="2"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="OrbitalCommandFlying">
+        <AbilArray Link="ScannerSweep"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+    </CUnit>
+</Catalog>

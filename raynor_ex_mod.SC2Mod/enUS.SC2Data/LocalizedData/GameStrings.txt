@@ -1,0 +1,7 @@
+﻿Button/Name/ResearchAdvancedGyroscopicStabilizers=Research Advanced Gyroscopic Stabilizers
+Button/Tooltip/ResearchAdvancedGyroscopicStabilizers=Enables <c val="ffff8a">Orbital Command</c> to use the Scanner Sweep while in flight.
+DocInfo/DescShort=Any
+DocInfo/Name=Tg Raynor Suggestions
+RequirementNode/Tooltip/CountUpgradeAdvancedGyroscopicStabilizersCompleteOnly3627410821TechTreeCheat=Research Advanced Gyroscopic Stabilizers at the Engineering Bay
+RequirementNode/Tooltip/Or3100157679CountUnitOrbitalCommandCompleteOnlyAtUnitCountUpgradeAdvancedGyroscopicStabilizersCompleteOnly3627410821TechTreeCheat=Research Advanced Gyroscopic Stabilizers at the Enginering Bay
+Upgrade/Name/AdvancedGyroscopicStabilizers=Advanced Gyroscopic Stabilizers
