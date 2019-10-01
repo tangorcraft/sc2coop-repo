@@ -1,0 +1,20 @@
+﻿Behavior/Name/MapWideStasisAftereffect=Stasis Aftereffect
+Behavior/Tooltip/MapWideStasisAftereffect=This unit is slowed and cannot attack or use energy-based abilities.
+Button/Name/RecallOnDeathTelbrus=Recall On Death
+Button/Tooltip/RecallOnDeathTelbrus=Upon taking fatal damage summoned Zealots are recalled to Telbrus.<n/><n/><c val="ffff8a">Passive ability.</c>
+DocInfo/DescShort=Any
+DocInfo/Name=Just Another StarCraft II Mod
+Effect/Name/CoopTelbrusRecallZealotOnDeathAB=Coop - Telbrus Recall Zealot On Death AB
+Effect/Name/CoopTelbrusRecallZealotOnDeathTeleportAB=Coop - Telbrus Recall Zealot On Death Teleport AB
+Effect/Name/CoopTelbrusZealotRecalledOnDeath=Coop - Telbrus Zealot Recalled On Death Heal
+Effect/Name/CoopTelbrusZealotRecalledOnDeathUseEnergy=Coop - Telbrus Zealot Recalled On Death Use Energy
+Effect/Name/TelbrusRecallZealotInitialAB=Telbrus Recall Zealot Initial AB
+Effect/Name/TelbrusRecallZealotInitialSearch=Telbrus Recall Zealot Initial Search
+Effect/Name/TelbrusRecallZealotOnDeathTeleport=Telbrus Recall Zealot On Death Teleport
+Effect/Name/TelbrusRecallZealotOnDeathTeleportSet=Telbrus Recall Zealot On Death TeleportSet
+Effect/Name/ZeratulCannonProjectionLinkAB=ZeratulCannonProjectionLinkAB
+Effect/Name/ZeratulMapWideStasisAftereffectAB=ZeratulMapWideStasisAftereffectAB
+Effect/Name/ZeratulMapWideStasisApply10s=ZeratulMapWideStasisApply10s
+Effect/Name/ZeratulMapWideStasisApply5s=ZeratulMapWideStasisApply5s
+Effect/Name/ZeratulMapWideStasisSwitch=ZeratulMapWideStasisSwitch
+RequirementNode/Tooltip/CountBehaviorTelbrusRecallZealotControllerCompleteOnlyAtUnit=Telbrus with enough energy.

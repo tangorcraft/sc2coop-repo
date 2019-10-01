@@ -1,0 +1,9 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: ZeratulEx
+//--------------------------------------------------------------------------------------------------
+// Trigger Declarations
+trigger lib685C1893_gt_Zeratul_Projection_Killed;
+trigger lib685C1893_gt_Zeratul_Telbrus_Zealot_Recalled;
+

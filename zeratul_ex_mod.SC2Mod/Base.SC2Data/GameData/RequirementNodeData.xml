@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementCountBehavior id="CountBehaviorTelbrusRecallZealotControllerCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TelbrusRecallZealotController" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementAnd id="HaveTelbrusRecallandFirstArtifact">
+        <OperandArray value="CountUpgradeZeratulArtifactTier1CompleteOnly3158109584"/>
+        <OperandArray value="CountBehaviorTelbrusRecallZealotControllerCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+</Catalog>

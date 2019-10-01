@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorUnitCompareVital id="CasterEnergyGE25" parent="CasterEnergyLT50">
+        <Compare value="GE"/>
+        <Value value="25"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorPlayerRequirement id="HaveLegendaryLegionAbilitiesTier1">
+        <Find value="1"/>
+        <Value value="HaveLegendaryLegionAbilitiesTier1"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorLocationEnumArea id="HighTemplarHeroStormAutoCastArea">
+        <AreaArray Compare="GE" Radius="3" Validator="HighTemplarHeroStormAutoCastCB"/>
+        <Count value="2"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Structure,Missile,Destructible,Dead,Hidden,Invulnerable,Benign"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="AvatarofFormStormAutoCastArea">
+        <AreaArray Compare="GE" Radius="3" Validator="AvatarofFormStormAutoCastCB"/>
+        <Count value="2"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Structure,Missile,Destructible,Dead,Hidden,Invulnerable,Benign"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="HighTemplarHeroStormAutoCastCB">
+        <Behavior value="KarassPsiStorm"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="AvatarofFormStormAutoCastCB">
+        <Behavior value="ZeratulXelNagaConstructPsiStorm"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="IsTelbrusZealot">
+        <Value value="ZeratulSummonZealot"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareVitality id="TargetVitalityGE500">
+        <Compare value="GE"/>
+        <Value value="500"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorUnitCompareVitality id="TargetVitalityGE100">
+        <Compare value="GE"/>
+        <Value value="100"/>
+    </CValidatorUnitCompareVitality>
+    <CValidatorCombine id="TargetVitalityGE500OrTargetisHeroic">
+        <CombineArray value="TargetVitalityGE500"/>
+        <CombineArray value="IsHeroic"/>
+    </CValidatorCombine>
+</Catalog>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="ZeratulArtifactTier2">
+        <EffectArray Reference="Behavior,MapWideStasisAftereffect,Duration" Value="3.000000"/>
+        <EffectArray Reference="Effect,ZeratulMapWideStasisSearch,AreaArray[0].RectangleWidth" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,MapWideStasisAftereffect,Modification.StateFlags[SuppressCloak]" Value="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZeratulArtifactTier3">
+        <EffectArray Operation="Set" Reference="Effect,CoopTelbrusZealotRecalledOnDeath,VitalArray[Life].ChangeFraction" Value="1"/>
+        <EffectArray Operation="Set" Reference="Effect,Feedback,LeechFraction[Energy]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Effect,Feedback,LeechFraction[Shields]" Value="1"/>
+        <EffectArray Reference="Behavior,MapWideStasisAftereffect,Duration" Value="3.000000"/>
+        <EffectArray Reference="Effect,ZeratulMapWideStasisSearch,AreaArray[0].RectangleWidth" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,MapWideStasisAftereffect,Modification.StateFlags[SuppressDetection]" Value="1"/>
+    </CUpgrade>
+</Catalog>

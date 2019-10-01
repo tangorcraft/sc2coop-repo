@@ -1,0 +1,7 @@
+﻿Library/Name/685C1893=ZeratulEx
+Trigger/Name/lib_685C1893_4B1B8357=Zeratul_Telbrus_Zealot_Recalled
+Trigger/Name/lib_685C1893_FC1C54AF=Zeratul_Projection_Killed
+Variable/Name/lib_685C1893_2EC9B830=zealot
+Variable/Name/lib_685C1893_3ED769DB=life
+Variable/Name/lib_685C1893_84AA9416=projection
+Variable/Name/lib_685C1893_91370EF5=source

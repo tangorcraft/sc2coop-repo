@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorModel id="SOARecallOnDeathStart">
+        <On Terms="Behavior.TelbrusRecallZealotOnDeath.On" Send="Create"/>
+        <On Terms="Behavior.TelbrusRecallZealotOnDeath.On" Send="Create WarpTrainStart"/>
+    </CActorModel>
+    <CActorModel id="SOARecallOnDeathStop">
+        <On Terms="Behavior.TelbrusRecallZealotOnDeath.Off" Send="Create"/>
+        <On Terms="Behavior.TelbrusRecallZealotOnDeath.Off" Send="Create WarpTrainStop"/>
+    </CActorModel>
+</Catalog>

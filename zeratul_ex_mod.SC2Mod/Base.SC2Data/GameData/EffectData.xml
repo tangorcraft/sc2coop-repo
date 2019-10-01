@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectApplyBehavior id="CoopTelbrusRecallZealotOnDeathAB">
+        <PreloadValidatorArray value="VorazunCommanderActive"/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="TelbrusRecallZealotOnDeath"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="CoopTelbrusZealotRecalledOnDeath">
+        <VitalArray index="Shields" ChangeFraction="1"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="CoopTelbrusZealotRecalledOnDeathUseEnergy">
+        <LaunchUnit Value="Caster"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy" Change="-25"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="TelbrusRecallZealotInitialAB">
+        <ValidatorArray index="0" value="IsTelbrusZealot"/>
+        <EditorCategories value=""/>
+        <Behavior value="TelbrusRecallZealotController"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TelbrusRecallZealotInitialSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="CasterUnitOrPoint"/>
+        <SearchFilters value="-;Ally,Neutral,Enemy"/>
+        <AreaArray Radius="500" Effect="TelbrusRecallZealotInitialAB"/>
+    </CEffectEnumArea>
+    <CEffectTeleport id="TelbrusRecallZealotOnDeathTeleport">
+        <MinDistance value="0"/>
+        <PlacementAround Value="CasterUnit"/>
+        <PlacementRange value="10"/>
+        <SourceLocation Value="TargetUnit"/>
+    </CEffectTeleport>
+    <CEffectSet id="TelbrusRecallZealotOnDeathTeleportSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="DeathRecallSourceRemoveDebuff"/>
+        <EffectArray value="TelbrusRecallZealotOnDeathTeleport"/>
+        <EffectArray value="CoopTelbrusZealotRecalledOnDeath"/>
+        <EffectArray value="CoopTelbrusZealotRecalledOnDeathUseEnergy"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ZeratulMapWideStasisAftereffectAB">
+        <ValidatorArray index="0" value="HaveZeratulArtifactTier2"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="MapWideStasisAftereffect"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZeratulMapWideStasisApply10s">
+        <ValidatorArray value="NotMapBoss"/>
+        <ValidatorArray value="NotFrenzied"/>
+        <ValidatorArray value="NoTimeStopImmune"/>
+        <ValidatorArray value="TargetIsNotNonCommanderAlly"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="ZeratulMapWideStasis"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="10"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ZeratulMapWideStasisApply5s">
+        <ValidatorArray value="NotMapBoss"/>
+        <ValidatorArray value="NotFrenzied"/>
+        <ValidatorArray value="NoTimeStopImmune"/>
+        <ValidatorArray value="TargetIsNotNonCommanderAlly"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="ZeratulMapWideStasis"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="5"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ZeratulMapWideStasisSearch">
+        <AreaArray index="0" RectangleWidth="4" RectangleHeight="1" Effect="ZeratulMapWideStasisSwitch"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="ZeratulMapWideStasisSwitch">
+        <EditorCategories value="Race:Protoss"/>
+        <CaseArray Validator="TargetVitalityGE500" Effect="ZeratulMapWideStasisApply5s"/>
+        <CaseArray Validator="TargetVitalityGE100" Effect="ZeratulMapWideStasisApply10s"/>
+        <CaseDefault value="ZeratulMapWideStasisApply"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="ZeratulCannonProjectionLinkAB">
+        <EditorCategories value=""/>
+        <Behavior value="ZeratulCannonProjectionLink"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ZeratulPhaseCannonProjectionSpawnEffectSet">
+        <EffectArray value="ZeratulCannonProjectionLinkAB"/>
+    </CEffectSet>
+</Catalog>

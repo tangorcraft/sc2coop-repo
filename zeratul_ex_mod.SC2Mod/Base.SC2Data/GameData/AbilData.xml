@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilEffectTarget id="KarassFeedback">
+        <AutoCastRange value="11"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="KarassPsiStorm">
+        <AutoCastValidatorArray value="HighTemplarHeroStormAutoCastArea"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ZeratulXelNagaConstructDevolve">
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,Worker,Missile,Stasis,Dead,Benign,MapBoss"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ZeratulXelNagaConstructPsiStorm">
+        <Cost index="0">
+            <Cooldown TimeUse="4"/>
+        </Cost>
+        <AutoCastValidatorArray value="AvatarofFormStormAutoCastArea"/>
+    </CAbilEffectTarget>
+</Catalog>

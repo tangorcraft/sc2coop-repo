@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="HaveLegendaryLegionAbilitiesTier1">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeZeratulArtifactTier1CompleteOnly3158109584"/>
+        <NodeArray index="Show" Link="GTECountUpgradeCommanderLevelCompleteOnly8"/>
+    </CRequirement>
+    <CRequirement id="HaveTelbrusRecall">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="HaveTelbrusRecallandFirstArtifact"/>
+        <NodeArray index="Show" Link="GTECountUpgradeCommanderLevelCompleteOnly8"/>
+    </CRequirement>
+</Catalog>

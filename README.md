@@ -57,3 +57,27 @@ I tried to implement a mechanics similar to Abathur and Dehaka (the more enemy u
 * "-shipswap" command will swap Build Tempest with Karax's Build Carrier. Fleet Beacon upgrades are swapped too.
 * “Superior Warp Gates” passive icon changed into submenu button, that shows all warp in buttons for selected buildings (Gate, Robo, Stargate).
 
+# Zeratul
+### zeratul_ex_mod.SC2Mod
+* If cannon projection is killed, it will add 120 seconds to projection cooldown.
+* Telbrus Legion
+  * Feedback energy cost is removed and cooldown is 5 seconds. Additionaly Telbrus restores shileds and energy per damage dealt by Feedback.
+  * Some changes to Psi Storm autocast validators (require at least 2 targets)
+  * New passive ability "Recall on Death", cost 25 energy from Telbrus, requires comander level 8 and first artifact. When Zealot takes fatal damage, it will be recalled back to Telbrus and restore shileds.
+    * when second artifact if found, "Recall on Death" will reset cooldown on Windwhirl and Charge abilities.
+    * when third artifact is found, "Recall on Death" will also restore HP of Zealot.
+    * it will not work if Telbrus has not enough energy or killed.
+* Legon's heroes now have "heroic" tag
+* Stasis Beam
+  * it will now cast stasis with different duration depending on unit vitals (HP + Shileds)
+    * heroic units and units with vitals >= 500: 5 seconds
+    * 500 > vitals >= 100: 10 seconds
+    * vitals < 100: 15 seconds
+  * after stasis units will be debuffed by "Stasis Aftereffect" for 3 seconds
+    * slowed and cannot attack or use energy-based abilities
+    * 2nd artifact: + 1 to beam width, + 3 seconds to debuff duration, + cloaking is disabled
+    * 3rd artifact: + 1 to beam width, + another 3 seconds, + detection is disabled
+* Avatar of Form: couldn't think of any other good changes
+  * Changes to Storm autocast validators (require at lest 2 targets)
+  * Storm cooldown reduced to 4 seconds
+* Avatar of Essense: a minor change to Devolve autocast filters

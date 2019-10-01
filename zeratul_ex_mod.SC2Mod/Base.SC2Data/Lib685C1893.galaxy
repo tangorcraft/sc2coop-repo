@@ -1,0 +1,112 @@
+include "TriggerLibs/NativeLib"
+include "LibCOMI"
+
+include "Lib685C1893_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: ZeratulEx
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void lib685C1893_InitLibraries () {
+    libNtve_InitVariables();
+    libCOMI_InitVariables();
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: Zeratul_Projection_Killed
+//--------------------------------------------------------------------------------------------------
+bool lib685C1893_gt_Zeratul_Projection_Killed_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_projection;
+    unit lv_source;
+    fixed lv_life;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_projection = EventUnit();
+    lv_source = UnitBehaviorEffectUnit(EventUnit(), "ZeratulCannonProjectionLink", c_effectUnitSource, 0);
+    lv_life = UnitGetPropertyFixed(lv_projection, c_unitPropLife, c_unitPropCurrent);
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitGetType(lv_projection) == "ZeratulPhotonCannonProjection"))) {
+            return false;
+        }
+
+        if (!((UnitHasBehavior2(lv_projection, "ZeratulCannonProjectionLink") == true))) {
+            return false;
+        }
+
+        if (!((lv_life == 0.0))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitAbilityAddCooldown(lv_source, "PhaseCannonProjection", "Abil/PhaseCannonProjection", 120.0);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib685C1893_gt_Zeratul_Projection_Killed_Init () {
+    lib685C1893_gt_Zeratul_Projection_Killed = TriggerCreate("lib685C1893_gt_Zeratul_Projection_Killed_Func");
+    TriggerAddEventUnitDied(lib685C1893_gt_Zeratul_Projection_Killed, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Zeratul_Telbrus_Zealot_Recalled
+//--------------------------------------------------------------------------------------------------
+bool lib685C1893_gt_Zeratul_Telbrus_Zealot_Recalled_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_zealot;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_zealot = EventPlayerEffectUsedUnitImpact();
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitIssueOrder(lv_zealot, OrderTargetingPoint(AbilityCommand("attack", 0), libCOMI_gv_cM_ZeratulTopBarRallyPoint[UnitGetOwner(lv_zealot)]), c_orderQueueReplace);
+    if ((TechTreeUpgradeCount(UnitGetOwner(lv_zealot), "ZeratulArtifactTier2", c_techCountCompleteOnly) >= 1)) {
+        UnitAbilityReset(lv_zealot, AbilityCommand("ZeratulCharge", 0), c_spendLocationAll);
+        UnitAbilityReset(lv_zealot, AbilityCommand("ZeratulZealotWhirlwind", 0), c_spendLocationAll);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib685C1893_gt_Zeratul_Telbrus_Zealot_Recalled_Init () {
+    lib685C1893_gt_Zeratul_Telbrus_Zealot_Recalled = TriggerCreate("lib685C1893_gt_Zeratul_Telbrus_Zealot_Recalled_Func");
+    TriggerAddEventPlayerEffectUsed(lib685C1893_gt_Zeratul_Telbrus_Zealot_Recalled, c_playerAny, "CoopTelbrusZealotRecalledOnDeath");
+}
+
+void lib685C1893_InitTriggers () {
+    lib685C1893_gt_Zeratul_Projection_Killed_Init();
+    lib685C1893_gt_Zeratul_Telbrus_Zealot_Recalled_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool lib685C1893_InitLib_completed = false;
+
+void lib685C1893_InitLib () {
+    if (lib685C1893_InitLib_completed) {
+        return;
+    }
+
+    lib685C1893_InitLib_completed = true;
+
+    lib685C1893_InitLibraries();
+    lib685C1893_InitTriggers();
+}
+

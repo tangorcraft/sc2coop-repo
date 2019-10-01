@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="RecallOnDeathTelbrus">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-RecallOnDeath.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-RecallOnDeath.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+</Catalog>
