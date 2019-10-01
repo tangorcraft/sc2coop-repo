@@ -59,12 +59,12 @@ I tried to implement a mechanics similar to Abathur and Dehaka (the more enemy u
 
 # Zeratul
 ### zeratul_ex_mod.SC2Mod
-* If cannon projection is killed, it will add 120 seconds to projection cooldown.
+* If cannon projection is killed, 120 seconds is added to projection cooldown.
 * Telbrus Legion
-  * Feedback energy cost is removed and cooldown is 5 seconds. Additionaly Telbrus restores shileds and energy per damage dealt by Feedback.
+  * Feedback energy cost is removed and cooldown is 5 seconds. Additionally Telbrus restores shields and energy per damage dealt by Feedback.
   * Some changes to Psi Storm autocast validators (require at least 2 targets)
   * New passive ability "Recall on Death", cost 25 energy from Telbrus, requires comander level 8 and first artifact. When Zealot takes fatal damage, it will be recalled back to Telbrus and restore shileds.
-    * when second artifact if found, "Recall on Death" will reset cooldown on Windwhirl and Charge abilities.
+    * when second artifact is found, "Recall on Death" will reset cooldown on Whirlwind and Charge abilities.
     * when third artifact is found, "Recall on Death" will also restore HP of Zealot.
     * it will not work if Telbrus has not enough energy or killed.
 * Legon's heroes now have "heroic" tag
@@ -78,6 +78,6 @@ I tried to implement a mechanics similar to Abathur and Dehaka (the more enemy u
     * 2nd artifact: + 1 to beam width, + 3 seconds to debuff duration, + cloaking is disabled
     * 3rd artifact: + 1 to beam width, + another 3 seconds, + detection is disabled
 * Avatar of Form: couldn't think of any other good changes
-  * Changes to Storm autocast validators (require at lest 2 targets)
+  * Changed Storm autocast validators (require at lest 2 targets)
   * Storm cooldown reduced to 4 seconds
 * Avatar of Essense: a minor change to Devolve autocast filters
