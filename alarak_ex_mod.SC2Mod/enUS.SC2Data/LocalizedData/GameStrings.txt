@@ -1,13 +1,21 @@
-﻿Button/Name/AlarakEnslavedSoulsArmorLocked=Enslaved Souls Armor
+﻿Abil/Name/PermanentPresence=Permanent Presence
+Button/Name/AlarakEnslavedSoulsArmorLocked=Enslaved Souls Armor
 Button/Name/EnslavedSoulsArmor=Enslaved Souls Armor
 Button/Name/EnslavedSoulsArmorResearch=Enslaved Souls Armor
-Button/Tooltip/EnslavedSoulsArmor=Absorbed enemy souls strengthen Alarak's shield armor with +<d ref="Behavior,AlarakEnslavedSoulsArmor,Modification.ShieldArmorBonus" precision="2"/>.<n/>Alarak have <d ref="Behavior,AlarakEnslavedSoulsArmor,DamageResponse.Chance*100.0" precision="2"/>% chance to reflect enemy attack back, dealing <d ref="Effect,AlarakSoulShieldReflectionDamage,Amount" precision="2"/> damage.
+Button/Name/PermanentPresence=Permanent Presence
+Button/Tooltip/DestroyerPerm=Area assault craft. Can use Destruction Beam to attack multiple units.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/EnslavedSoulsArmor=Absorbed enemy souls strengthen Alarak's shields.<n/>Alarak have <d ref="Behavior,AlarakEnslavedSoulsArmor,DamageResponse.Chance*100.0" precision="2"/>% chance to reflect enemy attack back, dealing <d ref="Effect,AlarakSoulShieldReflectionDamage,Amount" precision="2"/> damage.
 Button/Tooltip/EnslavedSoulsArmorResearch=Absorbed enemy souls will strengthen Alarak's shield armor.<n/>Alarak will have a chance to reflect enemy attack back.
+Button/Tooltip/PermanentPresence=Allows Destroyer to stay on the battlefield permanently.
 DocInfo/DescShort=Any
-DocInfo/Name=Just Another StarCraft II Mod
+DocInfo/Name=Tg Alarak Suggestions
+Effect/Name/AlarakDestroyerNoScrapDropRB=AlarakDestroyerNoScrapDropRB
+Effect/Name/AlarakDestroyerPremanentSet=AlarakDestroyerPremanentSet
+Effect/Name/AlarakDestroyerTimedLifeRB=AlarakDestroyerTimedLifeRB
 Effect/Name/AlarakSoulShieldReflectionDamage=AlarakSoulShieldReflectionDamage
 Effect/Name/AlarakSoulShieldReflectionSearch=AlarakSoulShieldReflectionSearch
 Effect/Name/AlarakSoulShieldReflectionSwitch=AlarakSoulShieldReflectionSwitch
 Effect/Name/AlarakVengefulSoulReflectionDamage=AlarakVengefulSoulReflectionDamage
 RequirementNode/Tooltip/CountUpgradeEnslavedSoulsArmorCompleteOnly3549482196=Research Enslaved Souls Armor at the Forge
+Unit/Name/DestroyerPerm=Destroyer
 Upgrade/Name/EnslavedSoulsArmor=Enslaved Souls Armor

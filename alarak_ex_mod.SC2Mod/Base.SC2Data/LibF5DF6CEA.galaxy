@@ -29,7 +29,7 @@ void libF5DF6CEA_InitVariables () {
 // Functions
 void libF5DF6CEA_gf_UpdateSoulShield (int lp_player) {
     // Variable Declarations
-    fixed lv_armor;
+    fixed lv_shields;
     fixed lv_chance;
     fixed lv_dmg;
     fixed lv_count;
@@ -42,35 +42,30 @@ void libF5DF6CEA_gf_UpdateSoulShield (int lp_player) {
 
     // Implementation
     if ((lv_count < 300.0)) {
-        lv_armor += (lv_count * 0.01);
+        lv_shields += lv_count;
         lv_chance += (lv_count * 0.001);
         lv_dmg += (lv_count * 0.03);
     }
     else {
-        lv_armor += 3.0;
+        lv_shields += 300.0;
         lv_chance += 0.3;
         lv_dmg += 9.0;
         lv_count -= 300.0;
-        if ((libF5DF6CEA_gv_alarak_SoulCount[lp_player] < 1000.0)) {
-            lv_armor += (lv_count * 0.01);
-            lv_chance += (lv_count * 0.0003);
+        if ((lv_count < 1000.0)) {
+            lv_shields += (lv_count * 0.3);
+            lv_chance += (lv_count * 0.0002);
             lv_dmg += (lv_count * 0.016);
         }
         else {
-            lv_armor += 10.0;
-            lv_chance += 0.3;
+            lv_shields += 300.0;
+            lv_chance += 0.2;
             lv_dmg += 16.0;
             lv_count -= 1000.0;
-            lv_armor += (lv_count * 0.005);
-            lv_chance += (lv_count * 0.0002);
+            lv_shields += (lv_count * 0.1);
             lv_dmg += (lv_count * 0.01);
-            if ((lv_chance > 0.75)) {
-                lv_chance = 0.75;
-            }
-
         }
     }
-    CatalogReferenceSet("Behavior,AlarakEnslavedSoulsArmor,Modification.ShieldArmorBonus", lp_player, FixedToString(lv_armor, c_fixedPrecisionAny));
+    CatalogReferenceSet("Behavior,AlarakEnslavedSoulsArmor,Modification.VitalMaxArray[Shields]", lp_player, FixedToString(lv_shields, c_fixedPrecisionAny));
     CatalogReferenceSet("Behavior,AlarakEnslavedSoulsArmor,DamageResponse.Chance", lp_player, FixedToString(lv_chance, c_fixedPrecisionAny));
     CatalogReferenceSet("Effect,AlarakSoulShieldReflectionDamage,Amount", lp_player, FixedToString(lv_dmg, c_fixedPrecisionAny));
 }

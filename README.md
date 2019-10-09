@@ -43,11 +43,12 @@ I tried to implement a mechanics similar to Abathur and Dehaka (the more enemy u
   * Increases Shield Armor.
   * Increases chance to reflect damage back to the attacking unit (initial chance is 5%). Damage is nullified.
   * Increases damage dealt to attacking unit, when reflection triggered (initial damage is 5).
+* Added "Permanent Presence" ability to Destroyers that is summoned with "Death Fleet" calldown. This ability remove "Timed Life" behaviors from Destroyers for the cost of 3 supply (psi) each.
 
 # Swann
 #### swann_ex_mod.SC2Mod
 * Pulse Amplifier will now also give Wraith an ability to attack while moving (when "Move" command is used). Unlike Phoenixes, Wraith can't turn while moving.
-* Added "Calldown: Extra Supplies" ability to Command Center. Made it cost 100 minerals instead of energy and have 30 seconds cool down. To activate this ability, enter "-supply" command.
+* Added "Calldown: Extra Supplies" ability to Command Center. Made it cost 100 minerals instead of energy and have 30 seconds cool down.
 
 # Raynor
 #### raynor_ex_mod.SC2Mod

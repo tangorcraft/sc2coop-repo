@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectRemoveBehavior id="AlarakDestroyerNoScrapDropRB">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="NoScrapDrop"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="AlarakDestroyerPremanentSet">
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="AlarakDestroyerTimedLifeRB"/>
+        <EffectArray value="AlarakDestroyerNoScrapDropRB"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="AlarakDestroyerTimedLifeRB">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="AlarakDestroyerTimedLife"/>
+    </CEffectRemoveBehavior>
     <CEffectDamage id="AlarakSoulShieldReflectionDamage">
         <ValidatorArray value="NotInvulnerable"/>
         <EditorCategories value="Race:Protoss"/>

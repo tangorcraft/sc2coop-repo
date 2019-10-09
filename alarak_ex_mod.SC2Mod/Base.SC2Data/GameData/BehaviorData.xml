@@ -9,5 +9,6 @@
         </DamageResponse>
         <InfoFlags index="Hidden" value="1"/>
         <DisableValidatorArray value="HaveAlarakEnslavedSoulsArmorUpgrade"/>
+        <Modification ShieldArmorBonus="2"/>
     </CBehaviorBuff>
 </Catalog>

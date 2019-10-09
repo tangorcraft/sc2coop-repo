@@ -1,6 +1,5 @@
 ﻿Abil/Name/SupplyDropSwann=Supply Drop
 DocInfo/DescShort=Any
 DocInfo/Name=Tg Swann Suggestion
-Param/Value/lib_DC35A2FD_C78B3214=Swann Supply Drop Enabled
 Weapon/Name/WraithAirS=Gemini Missiles
 Weapon/Name/WraithGndS=Burst Lasers

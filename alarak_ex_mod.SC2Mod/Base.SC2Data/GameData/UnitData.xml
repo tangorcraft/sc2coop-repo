@@ -24,4 +24,24 @@
             <LayoutButtons Face="AlarakEnslavedSoulsArmorLocked" Type="Passive" Requirements="AlarakLevel14" Row="2" Column="2"/>
         </CardLayouts>
     </CUnit>
+    <CUnit id="VoidRayTaldarim">
+        <Food value="0"/>
+        <AbilArray Link="PermanentPresence"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="PermanentPresence" Type="AbilCmd" AbilCmd="PermanentPresence,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <!--Speed value="3.375"/>
+        <Sight value="12"/>
+        <WeaponArray Link="VoidRayTaldarimAir"/>
+        <WeaponArray Link="VoidRayTaldarimGround"/>
+        <SubgroupPriority value="16"/>
+        <SelectAlias value="VoidRay"/-->
+    </CUnit>
+    <CUnit id="DestroyerPerm" parent="VoidRayTaldarim">
+        <Food value="-3"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" removed="1"/>
+        </CardLayouts>
+        <AbilArray index="5" removed="1"/>
+    </CUnit>
 </Catalog>

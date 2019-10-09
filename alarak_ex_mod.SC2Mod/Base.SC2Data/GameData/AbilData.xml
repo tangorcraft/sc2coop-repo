@@ -7,4 +7,16 @@
             <Button DefaultButtonFace="EnslavedSoulsArmorResearch" Requirements="LearnAlarakEnslavedSoulsArmor"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilMorph id="PermanentPresence">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PermanentPresence"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <InfoArray Unit="DestroyerPerm">
+            <SectionArray index="Abils">
+                <EffectArray index="Finish" value="AlarakDestroyerPremanentSet"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
 </Catalog>

@@ -12,4 +12,9 @@
         <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-ascendantspermanentlybetter.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="PermanentPresence">
+        <Icon value="Assets\Textures\btn-unit-protoss-voidray-taldarim.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-protoss-voidray-taldarim.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
 </Catalog>
