@@ -31,8 +31,9 @@ This variant allows Karax's Crono Wave ability and Nexus' Crono Boost ability to
   * Removed gas cost on army upgrades: attack, armor and sields upgrades in Forge and Cybernetics Core.
 * Level 11 talent (Instant Pylon/Cannons/Batteries warp)
   * Add 5 range to probe build ability. This will strengthen cannon push strategy for Karax early game.
-* Unit Cost Rediction mastery swap with Struscture Cost Reduction (-1% .. -30%)
-  * To try this, enter "-mswap" command.
+* Unit Cost Reduction mastery swapped with Structure Cost Reduction (-1% .. -30%).
+* Solar Efficiency upgrade will reduce combat unit cost (removing 10% from initial cost increase for each level, so unit cost becomes normal at level 3).
+* Solar Efficiency levels upgrades cost increased to 250/250, 325/325, 400/400.
 
 # Alarak
 #### alarak_ex_mod.SC2Mod

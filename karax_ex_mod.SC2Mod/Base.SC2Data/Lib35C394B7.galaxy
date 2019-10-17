@@ -1,5 +1,6 @@
 include "TriggerLibs/NativeLib"
 include "LibCOOC"
+include "LibCOMI"
 
 include "Lib35C394B7_h"
 
@@ -10,35 +11,24 @@ include "Lib35C394B7_h"
 void lib35C394B7_InitLibraries () {
     libNtve_InitVariables();
     libCOOC_InitVariables();
+    libCOMI_InitVariables();
+}
+
+// Custom Script
+//--------------------------------------------------------------------------------------------------
+// Custom Script: startingTechOverride
+//--------------------------------------------------------------------------------------------------
+void lib35C394B7_cf_Init(){
+  // this is run before override trigger variable is initialized, so we use TriggerCreate
+  libCOMI_gt_CM_StartingTech = TriggerCreate("lib35C394B7_gt_ov_StartingTech_Func");
+}
+
+void lib35C394B7_InitCustomScript () {
+    lib35C394B7_cf_Init();
 }
 
 // Functions
-void lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList2 (int lp_player) {
-    // Automatic Variable Declarations
-    // Implementation
-    libNtve_gf_SetUpgradeLevelForPlayer(lp_player, "KaraxCommander", 0);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("Zealot", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("ZealotPurifier", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("ZealotPurifierReviveCorpse", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("SentryPurifier", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("SentryPhasing", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("ImmortalAiur", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("Colossus", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("ColossusPurifier", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("PhoenixPurifier", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("Carrier", lp_player);
-    lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore("CarrierAiur", lp_player);
-    libNtve_gf_SetUpgradeLevelForPlayer(lp_player, "KaraxCommander", 1);
-}
-
-void lib35C394B7_gf_MasteryKaraxArmyCostReductionRestore (string lp_unitType, int lp_player) {
-    // Automatic Variable Declarations
-    // Implementation
-    libNtve_gf_CatalogFieldValueModifyBasedOnDefaultValue(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(c_resourceTypeMinerals) + "]", lp_player, 1.0, c_upgradeOperationMultiply);
-    libNtve_gf_CatalogFieldValueModifyBasedOnDefaultValue(c_gameCatalogUnit, lp_unitType, "CostResource[" + IntToString(c_resourceTypeVespene) + "]", lp_player, 1.0, c_upgradeOperationMultiply);
-}
-
-void lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList3 (int lp_player) {
+void lib35C394B7_gf_MasteryKaraxStructureCostList (int lp_player) {
     // Variable Declarations
     int lv_upgradeCount;
 
@@ -46,7 +36,7 @@ void lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList3 (int lp_player) {
     // Variable Initialization
 
     // Implementation
-    lv_upgradeCount = TechTreeUpgradeCount(lp_player, "MasteryKaraxUnitCost", c_techCountCompleteOnly);
+    lv_upgradeCount = TechTreeUpgradeCount(lp_player, "MasteryKaraxStructureCost", c_techCountCompleteOnly);
     lib35C394B7_gf_MasteryKaraxStructureCostReduction("SolarForge", lp_player, lv_upgradeCount);
     lib35C394B7_gf_MasteryKaraxStructureCostReduction("Nexus", lp_player, lv_upgradeCount);
     lib35C394B7_gf_MasteryKaraxStructureCostReduction("Assimilator", lp_player, lv_upgradeCount);
@@ -91,48 +81,62 @@ void lib35C394B7_gf_MasteryKaraxStructureCostReduction (string lp_unitType, int 
 
 // Triggers
 //--------------------------------------------------------------------------------------------------
-// Trigger: Karax Mastery Swap
+// Trigger: ov_StartingTech
 //--------------------------------------------------------------------------------------------------
-bool lib35C394B7_gt_KaraxMasterySwap_Func (bool testConds, bool runActions) {
+bool lib35C394B7_gt_ov_StartingTech_Func (bool testConds, bool runActions) {
     // Variable Declarations
-    int lv_p;
+    int lv_itPlayer;
+    playergroup lv_itPlayerGroup;
 
     // Automatic Variable Declarations
-    // Variable Initialization
-    lv_p = EventPlayer();
+    playergroup autoFCF97A8B_playerPool;
+    int autoFCF97A8B_itPlayer;
+    playergroup autoFCF97A8B_itTestPool;
+    playergroup auto2941EB7B_g;
 
-    // Conditions
-    if (testConds) {
-        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
-            return false;
-        }
-    }
+    // Variable Initialization
+    lv_itPlayerGroup = PlayerGroupEmpty();
 
     // Actions
     if (!runActions) {
         return true;
     }
 
-    if ((libCOOC_gf_ActiveCommanderForPlayer(lv_p) == "ProtossKarax")) {
-        TriggerEnable(TriggerGetCurrent(), false);
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_35C394B7_EDBC5447"));
-        lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList2(lv_p);
-        lib35C394B7_gf_CM_MasteryKerriganArmyVespeneCostList3(lv_p);
+    autoFCF97A8B_playerPool = PlayerGroupAll();
+    autoFCF97A8B_itPlayer = 0;
+    autoFCF97A8B_itTestPool=null;
+    while (PlayerGroupCount(autoFCF97A8B_playerPool)) {
+        autoFCF97A8B_itPlayer = PlayerGroupPlayer(autoFCF97A8B_playerPool, 1);
+        autoFCF97A8B_itTestPool = libCOOC_gf_MutualAlliedCommandersofPlayerCoutInactiveAndSelf(autoFCF97A8B_itPlayer);
+        PlayerGroupRemove(autoFCF97A8B_playerPool, autoFCF97A8B_itPlayer);
+        libNtve_gf_RemovePlayerGroupFromPlayerGroup(libNtve_gf_AlliesEnemiesOfPlayerCountInactiveAndSelf(libNtve_ge_PlayerRelation_AllyMutual,autoFCF97A8B_itPlayer), autoFCF97A8B_playerPool);
+        if(PlayerGroupCount(autoFCF97A8B_itTestPool)){
+            lv_itPlayerGroup = autoFCF97A8B_itTestPool;
+            libNtve_gf_SetAllianceAspectForPlayerGroup(lv_itPlayerGroup, c_allianceIdPower, true);
+        }
     }
-    else {
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_35C394B7_AC964A7E"));
+    auto2941EB7B_g = libCOOC_gf_CommanderPlayers();
+    lv_itPlayer = -1;
+    while (true) {
+        lv_itPlayer = PlayerGroupNextPlayer(auto2941EB7B_g, lv_itPlayer);
+        if (lv_itPlayer < 0) { break; }
+        libCOMI_gf_CM_StartingTechForHumanPlayer(lv_itPlayer);
+        if ((TechTreeUpgradeCount(lv_itPlayer, "MasteryKaraxStructureCost", c_techCountCompleteOnly) >= 1)) {
+            lib35C394B7_gf_MasteryKaraxStructureCostList(lv_itPlayer);
+        }
+
+        libCOMI_gf_SetWorkerRallyPointsPlayersNexuses(lv_itPlayer);
     }
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib35C394B7_gt_KaraxMasterySwap_Init () {
-    lib35C394B7_gt_KaraxMasterySwap = TriggerCreate("lib35C394B7_gt_KaraxMasterySwap_Func");
-    TriggerAddEventChatMessage(lib35C394B7_gt_KaraxMasterySwap, c_playerAny, "-mswap", true);
+void lib35C394B7_gt_ov_StartingTech_Init () {
+    lib35C394B7_gt_ov_StartingTech = TriggerCreate("lib35C394B7_gt_ov_StartingTech_Func");
 }
 
 void lib35C394B7_InitTriggers () {
-    lib35C394B7_gt_KaraxMasterySwap_Init();
+    lib35C394B7_gt_ov_StartingTech_Init();
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -148,6 +152,7 @@ void lib35C394B7_InitLib () {
     lib35C394B7_InitLib_completed = true;
 
     lib35C394B7_InitLibraries();
+    lib35C394B7_InitCustomScript();
     lib35C394B7_InitTriggers();
 }
 

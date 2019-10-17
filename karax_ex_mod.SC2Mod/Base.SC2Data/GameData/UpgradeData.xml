@@ -20,4 +20,68 @@
     <CUpgrade id="KaraxInstantStructureWarp">
         <EffectArray Reference="Abil,ProtossBuild,Range" Value="5"/>
     </CUpgrade>
+    <CUpgrade id="MasteryKaraxStructureCost">
+        <Flags index="UpgradeCheat" value="0"/>
+        <EffectArray Reference="Effect,MasteryKaraxStructureCostDisplayDummy,Amount" Value="1"/>
+        <EditorCategories value="Race:Protoss"/>
+        <MaxLevel value="30"/>
+        <LeaderAlias value=""/>
+    </CUpgrade>
+    <CUpgrade id="SolarEfficiencyLevel1">
+        <EffectArray Operation="Subtract" Reference="Unit,ZealotPurifier,CostResource[Minerals]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPurifier,CostResource[Minerals]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPurifier,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPhasing,CostResource[Minerals]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPhasing,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ImmortalAiur,CostResource[Minerals]" Value="29"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ImmortalAiur,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Colossus,CostResource[Minerals]" Value="30"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Colossus,CostResource[Vespene]" Value="20"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ColossusPurifier,CostResource[Minerals]" Value="30"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ColossusPurifier,CostResource[Vespene]" Value="20"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhoenixPurifier,CostResource[Minerals]" Value="15"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhoenixPurifier,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Carrier,CostResource[Minerals]" Value="35"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Carrier,CostResource[Vespene]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CarrierAiur,CostResource[Minerals]" Value="35"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CarrierAiur,CostResource[Vespene]" Value="25"/>
+    </CUpgrade>
+    <CUpgrade id="SolarEfficiencyLevel2">
+        <EffectArray Operation="Subtract" Reference="Unit,ZealotPurifier,CostResource[Minerals]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPurifier,CostResource[Minerals]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPurifier,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPhasing,CostResource[Minerals]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPhasing,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ImmortalAiur,CostResource[Minerals]" Value="29"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ImmortalAiur,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Colossus,CostResource[Minerals]" Value="30"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Colossus,CostResource[Vespene]" Value="20"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ColossusPurifier,CostResource[Minerals]" Value="30"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ColossusPurifier,CostResource[Vespene]" Value="20"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhoenixPurifier,CostResource[Minerals]" Value="15"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhoenixPurifier,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Carrier,CostResource[Minerals]" Value="35"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Carrier,CostResource[Vespene]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CarrierAiur,CostResource[Minerals]" Value="35"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CarrierAiur,CostResource[Vespene]" Value="25"/>
+    </CUpgrade>
+    <CUpgrade id="SolarEfficiencyLevel3">
+        <EffectArray Operation="Subtract" Reference="Unit,ZealotPurifier,CostResource[Minerals]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPurifier,CostResource[Minerals]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPurifier,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPhasing,CostResource[Minerals]" Value="5"/>
+        <EffectArray Operation="Subtract" Reference="Unit,SentryPhasing,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ImmortalAiur,CostResource[Minerals]" Value="29"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ImmortalAiur,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Colossus,CostResource[Minerals]" Value="30"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Colossus,CostResource[Vespene]" Value="20"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ColossusPurifier,CostResource[Minerals]" Value="30"/>
+        <EffectArray Operation="Subtract" Reference="Unit,ColossusPurifier,CostResource[Vespene]" Value="20"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhoenixPurifier,CostResource[Minerals]" Value="15"/>
+        <EffectArray Operation="Subtract" Reference="Unit,PhoenixPurifier,CostResource[Vespene]" Value="10"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Carrier,CostResource[Minerals]" Value="35"/>
+        <EffectArray Operation="Subtract" Reference="Unit,Carrier,CostResource[Vespene]" Value="25"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CarrierAiur,CostResource[Minerals]" Value="35"/>
+        <EffectArray Operation="Subtract" Reference="Unit,CarrierAiur,CostResource[Vespene]" Value="25"/>
+    </CUpgrade>
 </Catalog>

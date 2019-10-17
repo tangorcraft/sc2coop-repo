@@ -14,4 +14,18 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannonSentry"/>
         <PlaceUnit value="PhotonCannon"/>
     </CAbilEffectTarget>
+    <CAbilResearch id="SolarForgeResearch">
+        <InfoArray index="Research1">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+        </InfoArray>
+        <InfoArray index="Research2">
+            <Resource index="Minerals" value="325"/>
+            <Resource index="Vespene" value="325"/>
+        </InfoArray>
+        <InfoArray index="Research3">
+            <Resource index="Minerals" value="400"/>
+            <Resource index="Vespene" value="400"/>
+        </InfoArray>
+    </CAbilResearch>
 </Catalog>

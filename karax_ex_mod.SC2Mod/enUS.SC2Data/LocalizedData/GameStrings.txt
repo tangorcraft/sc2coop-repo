@@ -1,11 +1,15 @@
 ﻿Abil/Name/PhaseCannonSentry=Phase Cannon
+Button/Name/MasteryKaraxStructureCost=Structure Resource Cost
 Button/Name/PhaseCannonSentry=Phase Cannon
+Button/Tooltip/MasteryKaraxStructureCost=Reduces the resource cost of Karax's structures. 
 Button/Tooltip/PhaseCannonSentry=Phases in a Photon Cannon that lasts for <d ref="Behavior,PhaseCannonTimedLifeSentry,Duration"/> seconds before leaving the battlefield.<n/><n/>The Photon Cannon must be placed within a power field.
 DocInfo/DescShort=Any
 DocInfo/Name=Coop Karax Suggestions
 Effect/Name/ChronoFieldInitialSet=Chrono Field Initial Set
+Effect/Name/MasteryKaraxStructureCostDisplayDummy=MasteryKaraxStructureCostDisplayDummy
 Effect/Name/PhaseCannonInitialStunSentry=Phase Cannon Initial Stun
 Effect/Name/PhaseCannonSentry=Phase Cannon
 Effect/Name/PhaseCannonTimedLifeSentry=Phase Cannon Timed Life
-Param/Value/lib_35C394B7_AC964A7E=Not Karax?
-Param/Value/lib_35C394B7_EDBC5447=Karax Mastery Swap
+Upgrade/Name/MasteryKaraxStructureCost=Mastery Karax Structure Cost
+UserData/MasteryUpgrades/[Override]KaraxMastery1_Name=Structure Cost
+UserData/MasteryUpgrades/[Override]KaraxMastery1_ValueFormat=-~A~% structure cost

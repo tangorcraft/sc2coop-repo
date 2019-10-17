@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CButton id="MasteryKaraxStructureCost"/>
     <CButton id="PhaseCannonSentry">
         <Icon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>

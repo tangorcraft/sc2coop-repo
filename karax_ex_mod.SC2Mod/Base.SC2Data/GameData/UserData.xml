@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUser id="MasteryUpgrades">
+        <Instances Id="[Override]KaraxMastery1">
+            <Fixed Fixed="1">
+                <Field Id="PointIncrement"/>
+            </Fixed>
+            <GameLink GameLink="MasteryKaraxStructureCost">
+                <Field Id="TalentData"/>
+            </GameLink>
+            <Text Text="UserData/MasteryUpgrades/[Override]KaraxMastery1_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/MasteryUpgrades/[Override]KaraxMastery1_ValueFormat">
+                <Field Id="ValueFormat"/>
+            </Text>
+            <Upgrade Upgrade="MasteryKaraxStructureCost">
+                <Field Id="Upgrade"/>
+            </Upgrade>
+        </Instances>
+    </CUser>
+</Catalog>
