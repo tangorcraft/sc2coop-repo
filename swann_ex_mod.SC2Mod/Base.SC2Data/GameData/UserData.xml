@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CUser id="CampaignPerk">
-        <!--   Swann   -->
-        <Instances index="61" Id="Swann">
+    <CUser id="PlayerCommanders">
+        <Instances index="2" Id="TerranSwann">
             <AbilCmd Abil="SupplyDropSwann">
-                <Field Id="AbilityCommand"/>
+                <Field Id="DefaultAbilityCommands" Index="8"/>
             </AbilCmd>
         </Instances>
     </CUser>

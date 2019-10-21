@@ -4,7 +4,7 @@ Button/Name/PhaseCannonSentry=Phase Cannon
 Button/Tooltip/MasteryKaraxStructureCost=Reduces the resource cost of Karax's structures. 
 Button/Tooltip/PhaseCannonSentry=Phases in a Photon Cannon that lasts for <d ref="Behavior,PhaseCannonTimedLifeSentry,Duration"/> seconds before leaving the battlefield.<n/><n/>The Photon Cannon must be placed within a power field.
 DocInfo/DescShort=Any
-DocInfo/Name=Coop Karax Suggestions
+DocInfo/Name=Tg Karax Suggestions
 Effect/Name/ChronoFieldInitialSet=Chrono Field Initial Set
 Effect/Name/MasteryKaraxStructureCostDisplayDummy=MasteryKaraxStructureCostDisplayDummy
 Effect/Name/PhaseCannonInitialStunSentry=Phase Cannon Initial Stun

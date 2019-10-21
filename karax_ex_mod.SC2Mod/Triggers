@@ -173,6 +173,7 @@
             <Variable Type="Variable" Library="35C394B7" Id="65816F46"/>
         </Element>
         <Element Type="FunctionDef" Id="3E94FABD">
+            <Internal/>
             <FlagAction/>
             <Parameter Type="ParamDef" Library="35C394B7" Id="8F83B33A"/>
             <Variable Type="Variable" Library="35C394B7" Id="FDDA57C4"/>
@@ -574,6 +575,7 @@
             <Variable Type="Variable" Library="35C394B7" Id="FDDA57C4"/>
         </Element>
         <Element Type="FunctionDef" Id="270FAAE7">
+            <Internal/>
             <FlagAction/>
             <Parameter Type="ParamDef" Library="35C394B7" Id="26684B32"/>
             <Parameter Type="ParamDef" Library="35C394B7" Id="35F0AE03"/>
