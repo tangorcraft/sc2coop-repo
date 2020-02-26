@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="HaveCompactFabricationMatrix">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeCompactFabricationMatrixCompleteOnly1803524883"/>
+    </CRequirement>
+    <CRequirement id="LearnCompactFabricationMatrix">
+        <EditorCategories value="Race:Protoss,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeCompactFabricationMatrixQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="ReleaseInterceptorsCoop">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUnitInterceptorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradeKaraxCommanderCompleteOnly"/>
+    </CRequirement>
+</Catalog>

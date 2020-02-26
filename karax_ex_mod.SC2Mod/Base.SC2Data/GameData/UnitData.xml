@@ -1,5 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <!--CUnit id="VoidRayTaldarimAirWeaponLeft" parent="MISSILE">-->
+    <!--        <Race value="Prot"/>-->
+    <!--        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>-->
+    <!--    </CUnit>-->
+    <!--    <CUnit id="VoidRayTaldarimAirWeaponRight" parent="MISSILE">-->
+    <!--        <Race value="Prot"/>-->
+    <!--        <EditorCategories value="ObjectType:Projectile,ObjectFamily:Campaign"/>-->
+    <!--    </CUnit-->
+    <CUnit id="Carrier">
+        <AbilArray Link="ReleaseInterceptorsCoop"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ReleaseInterceptors" Type="AbilCmd" AbilCmd="ReleaseInterceptorsCoop,Execute" Row="2" Column="2"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="CarrierAiur">
+        <AbilArray Link="ReleaseInterceptorsCoop"/>
+        <BehaviorArray Link="KaraxCarrierQueueBuff"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="ReleaseInterceptors" Type="AbilCmd" AbilCmd="ReleaseInterceptorsCoop,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="CompactFabricationMatrix" Type="Passive" Requirements="HaveCompactFabricationMatrix" Row="2" Column="3"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="FleetBeacon">
+        <CardLayouts index="0">
+            <LayoutButtons index="19">
+                <Face value="CompactFabricationMatrixResearch"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="FleetBeaconResearch,Research24"/>
+                <Requirements value=""/>
+                <Row value="0"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons index="20" Face="ResearchOracleStasisWardUpgradeLocked" Type="Passive" Requirements="VorazunLevel12" Row="0" Column="3"/>
+            <LayoutButtons index="21">
+                <Face value="ResearchFenixChampionCarrierBombersLocked"/>
+                <Type value="Passive"/>
+                <AbilCmd value=""/>
+                <Requirements value="FenixLevel14"/>
+                <Row value="0"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons index="22">
+                <Face value="ResearchCompactFabricationMatrixLocked"/>
+                <Type value="Passive"/>
+                <AbilCmd value=""/>
+                <Requirements value="KaraxLevel14"/>
+                <Row value="0"/>
+                <Column value="3"/>
+            </LayoutButtons>
+            <LayoutButtons index="23" Face="ResearchDoubleGravitonBeam" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research8" Row="0" Column="1"/>
+            <LayoutButtons index="24" Face="ResearchCorsairPermanentCloak" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research13" Row="0" Column="1"/>
+            <LayoutButtons index="25">
+                <Face value="ResearchPhaseArmor"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="FleetBeaconResearch,Research17"/>
+                <Requirements value=""/>
+                <Row value="0"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons index="26">
+                <Face value="ResearchInterceptorLaunchSpeedUpgrade"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="FleetBeaconResearch,Research1"/>
+                <Requirements value=""/>
+                <Row value="0"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons index="27" Face="ResearchPhaseArmorLocked" Type="Passive" Requirements="KaraxLevel14" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchDoubleGravitonBeamLocked" Type="Passive" Requirements="ArtanisLevel12" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchCorsairPermanentCloakLocked" Type="Passive" Requirements="VorazunLevel12" Row="0" Column="1"/>
+        </CardLayouts>
+        <!--CardLayouts index="0">
+            <LayoutButtons index="4">
+                <Face value="CarrierPassive"/>
+                <Type value="Passive"/>
+                <AbilCmd value=""/>
+                <Behavior value=""/>
+                <Requirements value=""/>
+                <SubmenuAbilState value=""/>
+                <SubmenuCardId value=""/>
+                <SubmenuFullSubCmdValidation value="0"/>
+                <SubmenuIsSticky value="0"/>
+                <ShowInGlossary value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons Face="ResearchPhasingArmorandGravitonDamage" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research8" Row="1" Column="0"/>
+            <LayoutButtons Face="AiurProtectorDamageBoost" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research5" Row="0" Column="2"/>
+            <LayoutButtons Face="ResearchDestructionBeam" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research7" Row="0" Column="3"/>
+            <LayoutButtons Face="ResearchBeamBounce" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research6" Row="0" Column="4"/>
+            <LayoutButtons Face="ResearchCarrierPhotonBombs" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research9" Row="1" Column="1"/>
+            <LayoutButtons Face="ResearchCarrierRepairDrones" Type="AbilCmd" AbilCmd="FleetBeaconResearch,Research10" Row="1" Column="1"/>
+        </CardLayouts-->
+    </CUnit>
     <CUnit id="SentryPhasing">
         <AbilArray Link="PhaseCannonSentry"/>
         <CardLayouts index="0">

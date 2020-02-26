@@ -27,13 +27,16 @@ This variant allows Karax's Crono Wave ability and Nexus' Crono Boost ability to
 * Energizer
   * Added ability to summon Phase Cannon (similar to Karax hero from campaign). Cost 100 energy, cannon exists 30 seconds, cool down 20 seconds.
   * Fixed a minor bug with subgroup priority of Phasing Mode Energizer.
-* Level 1 talent
-  * Removed gas cost on army upgrades: attack, armor and sields upgrades in Forge and Cybernetics Core.
+* Carrier
+  * Added "Release Interceptors" ability. Carrier launches all Interceptors at the target point with a 60 second timed life. Interceptors remain at the area until they expire. Cooldown 20 seconds.
+  * Added "Compact Fabrication Matrix" upgrade (Req. Level 14):
+    * Allows 2 Interceptors to be created simultaneously.
+	* Increases the maximum number of Interceptors that Carriers can hold to 12.
 * Level 11 talent (Instant Pylon/Cannons/Batteries warp)
   * Add 5 range to probe build ability. This will strengthen cannon push strategy for Karax early game.
-* Unit Cost Reduction mastery swapped with Structure Cost Reduction (-1% .. -30%).
-* Solar Efficiency upgrade will reduce combat unit cost (removing 10% from initial cost increase for each level, so unit cost becomes normal at level 3).
-* Solar Efficiency levels upgrades cost increased to 250/250, 325/325, 400/400.
+* Level 14 talent (Fleet Beacon Upgrades)
+  * "Compact Fabrication Matrix" upgrade. Cost 150/150, 90 seconds.
+* Solar Efficiency 1 and 3 upgrades will increase vespene harvest rate (+1 per trip).
 
 # Alarak
 #### alarak_ex_mod.SC2Mod
@@ -61,6 +64,7 @@ I tried to implement a mechanics similar to Abathur and Dehaka (the more enemy u
 
 # Zeratul
 ### zeratul_ex_mod.SC2Mod
+### since patch 4.11.4 this mod was disabled, none of this changes are in game anymore
 * If cannon projection is killed, 120 seconds is added to projection cooldown.
 * Telbrus Legion
   * Feedback energy cost is removed and cooldown is 5 seconds. Additionally Telbrus restores shields and energy per damage dealt by Feedback.

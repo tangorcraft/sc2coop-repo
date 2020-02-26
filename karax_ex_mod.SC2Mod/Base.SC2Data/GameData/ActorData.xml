@@ -9,4 +9,7 @@
         <On Terms="Behavior.PhaseCannonInitialStunSentry.On" Send="AnimSetTime Birth 5.000000"/>
         <On Terms="Behavior.PhaseCannonInitialStunSentry.On" Send="AnimSetTimeScale Birth 2.000000"/>
     </CActorUnit>
+    <CActorRange id="ReleaseInterceptorsRangeCoop" parent="RangeAbil" abil="ReleaseInterceptorsCoop">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+    </CActorRange>
 </Catalog>

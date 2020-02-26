@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilResearch id="FleetBeaconResearch">
+        <InfoArray index="Research24" Time="90" Upgrade="CompactFabricationMatrix">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="CompactFabricationMatrixResearch" State="Restricted" Requirements="LearnCompactFabricationMatrix"/>
+        </InfoArray>
+    </CAbilResearch>
     <CAbilEffectTarget id="PhaseCannonSentry">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Flags index="RangeUseCasterRadius" value="0"/>
@@ -14,18 +21,20 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="PhaseCannonSentry"/>
         <PlaceUnit value="PhotonCannon"/>
     </CAbilEffectTarget>
-    <CAbilResearch id="SolarForgeResearch">
-        <InfoArray index="Research1">
-            <Resource index="Minerals" value="250"/>
-            <Resource index="Vespene" value="250"/>
-        </InfoArray>
-        <InfoArray index="Research2">
-            <Resource index="Minerals" value="325"/>
-            <Resource index="Vespene" value="325"/>
-        </InfoArray>
-        <InfoArray index="Research3">
-            <Resource index="Minerals" value="400"/>
-            <Resource index="Vespene" value="400"/>
-        </InfoArray>
-    </CAbilResearch>
+    <CAbilBuild id="ProtossBuild">
+        <FlagArray index="RequireFacing" value="1"/>
+    </CAbilBuild>
+    <CAbilEffectTarget id="ReleaseInterceptorsCoop">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ReleaseInterceptorsBeaconCU"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/ReleaseInterceptors"/>
+            <Cooldown Link="Abil/ReleaseInterceptors" TimeUse="20"/>
+        </Cost>
+        <Range value="15"/>
+        <AINotifyEffect value="ReleaseInterceptors"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ReleaseInterceptors" Requirements="ReleaseInterceptorsCoop"/>
+    </CAbilEffectTarget>
 </Catalog>

@@ -1,15 +1,17 @@
 ﻿Abil/Name/PhaseCannonSentry=Phase Cannon
-Button/Name/MasteryKaraxStructureCost=Structure Resource Cost
+Abil/Name/ReleaseInterceptorsCoop=Release Interceptors
+Button/Name/CompactFabricationMatrix=Compact Fabrication Matrix
+Button/Name/CompactFabricationMatrixResearch=Research Compact Fabrication Matrix
 Button/Name/PhaseCannonSentry=Phase Cannon
-Button/Tooltip/MasteryKaraxStructureCost=Reduces the resource cost of Karax's structures. 
+Button/Name/ResearchCompactFabricationMatrixLocked=Research Compact Fabrication Matrix
+Button/Tooltip/CompactFabricationMatrix=Allows 2 Interceptors to be created simultaneously.<n/>Increases the maximum number of Interceptors that Carriers can hold to 12.
+Button/Tooltip/CompactFabricationMatrixResearch=<c val="ffff8a">Carriers</c> gain ability to create 2 Interceptors simultaneously.<n/>Increases the maximum number of Interceptors that <c val="ffff8a">Carriers</c> can hold to 12.
 Button/Tooltip/PhaseCannonSentry=Phases in a Photon Cannon that lasts for <d ref="Behavior,PhaseCannonTimedLifeSentry,Duration"/> seconds before leaving the battlefield.<n/><n/>The Photon Cannon must be placed within a power field.
 DocInfo/DescShort=Any
 DocInfo/Name=Tg Karax Suggestions
 Effect/Name/ChronoFieldInitialSet=Chrono Field Initial Set
-Effect/Name/MasteryKaraxStructureCostDisplayDummy=MasteryKaraxStructureCostDisplayDummy
 Effect/Name/PhaseCannonInitialStunSentry=Phase Cannon Initial Stun
 Effect/Name/PhaseCannonSentry=Phase Cannon
 Effect/Name/PhaseCannonTimedLifeSentry=Phase Cannon Timed Life
-Upgrade/Name/MasteryKaraxStructureCost=Mastery Karax Structure Cost
-UserData/MasteryUpgrades/[Override]KaraxMastery1_Name=Structure Cost
-UserData/MasteryUpgrades/[Override]KaraxMastery1_ValueFormat=-~A~% structure cost
+RequirementNode/Tooltip/CountUpgradeCompactFabricationMatrixCompleteOnly1803524883=Research Compact Fabrication Matrix at the Fleet Beacon
+Upgrade/Name/CompactFabricationMatrix=Compact Fabrication Matrix

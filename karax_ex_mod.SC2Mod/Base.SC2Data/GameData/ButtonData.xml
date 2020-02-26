@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CButton id="MasteryKaraxStructureCost"/>
+    <CButton id="CompactFabricationMatrix">
+        <Icon value="TgKarax\btn-compactfabmatrix.dds"/>
+        <AlertIcon value="TgKarax\btn-compactfabmatrix.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="CompactFabricationMatrixResearch">
+        <Icon value="TgKarax\btn-compactfabmatrix.dds"/>
+        <AlertIcon value="TgKarax\btn-compactfabmatrix.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="PhaseCannonSentry">
         <Icon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-phasecannon.dds"/>
+    </CButton>
+    <CButton id="ResearchCompactFabricationMatrixLocked" parent="ResearchLocked">
+        <Tooltip value="Button/Tooltip/ResearchLockedLevel14"/>
+        <EditorCategories value="Race:Protoss"/>
     </CButton>
 </Catalog>

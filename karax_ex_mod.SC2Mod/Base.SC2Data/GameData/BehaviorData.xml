@@ -20,4 +20,10 @@
             <StateFlags index="SuppressFoodUsed" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="KaraxCarrierQueueBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Requirements value="HaveCompactFabricationMatrix"/>
+        <Modification QueueCount="1" QueueSize="3"/>
+    </CBehaviorBuff>
 </Catalog>

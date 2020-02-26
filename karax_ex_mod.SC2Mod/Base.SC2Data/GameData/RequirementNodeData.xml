@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementCountUpgrade id="CountUpgradeCompactFabricationMatrixCompleteOnly1803524883">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="CompactFabricationMatrix" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeCompactFabricationMatrixQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="CompactFabricationMatrix" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementNot id="NotCountUpgradeCompactFabricationMatrixQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeCompactFabricationMatrixQueuedOrBetter"/>
+    </CRequirementNot>
+</Catalog>
